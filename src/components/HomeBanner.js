@@ -8,12 +8,14 @@ const titles = [
   { title: "workshops", type: 'workshops' },
 ];
 
-const HomeBanner = (props) => {
+const HomeBanner = ({ handleScroll }) => {
   return (
     <div className='home-banner'>
       {titles.map((titleProps, index) => <HomeBannerTitle {...titleProps} key={index} />)}
       <div className='home-banner__caret'>
-        <i className='fa fa-caret-down fa-3x'></i>
+        <button onClick={handleScroll}>
+          <i className='fa fa-caret-down fa-3x'></i>
+        </button>
       </div>
     </div>
   )

@@ -4,6 +4,11 @@ body {
   font-family: sans-serif;
 }
 
-p {
+* {
+  box-sizing: border-box;
+}
+
+p, h1, h2 {
+  font-family: 'Playfair Display';
   margin: 0;
 }

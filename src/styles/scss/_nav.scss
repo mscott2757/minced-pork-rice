@@ -8,7 +8,7 @@
   .nav__name {
     position: absolute;
     margin-top: 100px;
-    width: 190px;
+    width: 177px;
     left: 50%;
     transform: translateX(-50%) rotate(-90deg);
 
@@ -17,6 +17,7 @@
       font-style: italic;
       font-size: 28px;
       letter-spacing: 1px;
+      background-color: white;
     }
   }
 
@@ -31,6 +32,11 @@
       display: flex;
       justify-content: center;
       margin-bottom: 15px;
+
+      i {
+        background-color: white;
+        padding: 0 2px;
+      }
 
       &:last-child {
         margin-bottom: 0;

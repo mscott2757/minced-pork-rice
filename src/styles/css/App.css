@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+@import url(~font-awesome/css/font-awesome.min.css);
+.nav {
+  position: fixed;
+  left: 0;
+  width: 90px;
+  height: 100vh;
+  border-right: 1px solid #eee; }
+  .nav .nav__name {
+    position: absolute;
+    margin-top: 100px;
+    width: 190px;
+    left: 50%;
+    transform: translateX(-50%) rotate(-90deg); }
+    .nav .nav__name p {
+      font-family: 'Playfair Display';
+      font-style: italic;
+      font-size: 28px;
+      letter-spacing: 1px; }
+  .nav .nav__social {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 30px; }
+    .nav .nav__social .nav__icon-container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 15px; }
+      .nav .nav__social .nav__icon-container:last-child {
+        margin-bottom: 0; }
+
+.App {
+  width: 100%;
+  min-height: 200vh; }

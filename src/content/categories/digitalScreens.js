@@ -1,6 +1,7 @@
 import squareImg from '../../images/test-square.jpg';
 
 export const digitalScreens = {
+  id: 'digital-screens',
   title: 'Digital Screens',
   projects: [
     { imgSrc: squareImg,

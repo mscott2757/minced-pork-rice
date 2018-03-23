@@ -1,7 +1,11 @@
 import React from 'react';
 import Panel from './Panel';
 
-const Category = ({ title, projects }) => {
+const Category = ({ title, projects, id }) => {
+  const getProjectPath = (project) => {
+    return `/categories/${id}/${project.id}`;
+  }
+
   return (
     <div className='category'>
       <div className='category__title'>
@@ -9,7 +13,9 @@ const Category = ({ title, projects }) => {
         <h2>{ title }</h2>
       </div>
       <div className='projects panels'>
-        {projects.map((project, index) => <Panel className='project' {...project} key={index} />)}
+        {projects.map((project, index) => {
+          return <Panel className='project' {...project} path={getProjectPath(project)} key={project.id} />;
+        })}
       </div>
     </div>
   )

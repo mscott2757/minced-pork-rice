@@ -1,6 +1,7 @@
 import squareImg from '../../images/test-square.jpg';
 
 export const creativeWorkshops = {
+  id: 'creative-workshops',
   title: 'Creative Workshops',
   projects: [
     { imgSrc: squareImg,

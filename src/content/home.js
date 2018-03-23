@@ -7,28 +7,28 @@ export const home = {
       'Creative',
       'Workshops'
       ],
-      path: '/categories/creative-workshops'
+      id: 'creative-workshops'
     },
     { imgSrc: squareImg,
       lines: [
         'Digital',
         'Screens'
       ],
-      path: '/categories/digital-screens'
+      id: 'digital-screens'
     },
     { imgSrc: squareImg,
       lines: [
         'Interactive',
         'Experiences'
       ],
-      path: '/categories/interactive-experiences'
+      id: 'interactive-experiences'
     },
     { imgSrc: squareImg,
       lines: [
         'Just For',
         'Fun'
       ],
-      path: '/categories/just-for-fun'
+      id: 'just-for-fun'
     }
   ],
   titles: [

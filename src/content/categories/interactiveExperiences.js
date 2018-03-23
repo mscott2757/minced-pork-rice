@@ -1,6 +1,7 @@
 import squareImg from '../../images/test-square.jpg';
 
 export const interactiveExperiences = {
+  id: 'interactive-experiences',
   title: 'Interactive Experiences',
   projects: [
     { imgSrc: squareImg,

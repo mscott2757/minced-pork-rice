@@ -18,3 +18,7 @@ button {
   padding: 0 10px; }
   button:hover {
     cursor: pointer; }
+
+a {
+  text-decoration: none;
+  color: #333; }

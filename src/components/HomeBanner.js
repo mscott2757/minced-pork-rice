@@ -1,14 +1,7 @@
 import React from 'react';
 import { HomeBannerTitle } from './utils';
 
-const titles = [
-  { title: "I'm Waverly", type: 'name' },
-  { title: "& I design", type: 'design' },
-  { title: "creative", type: 'creative' },
-  { title: "workshops", type: 'workshops' },
-];
-
-const HomeBanner = ({ handleScroll }) => {
+const HomeBanner = ({ handleScroll, titles }) => {
   return (
     <div className='home-banner'>
       {titles.map((titleProps, index) => <HomeBannerTitle {...titleProps} key={index} />)}

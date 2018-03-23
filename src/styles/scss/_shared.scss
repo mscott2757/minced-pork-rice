@@ -1,0 +1,26 @@
+.panels {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+  .panel {
+    padding: 0 1.2vw;
+
+    img {
+      width: 100%;
+      margin-bottom: 3vh;
+    }
+
+    .panel__title {
+      text-align: center;
+
+      h3 {
+        letter-spacing: 1px;
+        font-size: 25px;
+        font-family: Lato;
+        font-style: italic;
+        font-weight: normal;
+      }
+    }
+  }
+}

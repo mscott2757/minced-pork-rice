@@ -37,7 +37,7 @@
 
 .home {
   width: 100%;
-  min-height: 200vh; }
+  height: 200vh; }
 
 .home-banner {
   height: 100vh;
@@ -72,31 +72,71 @@
     .home-banner .home-banner__title--workshops {
       padding-left: 29vw; }
 
-.home-projects-container {
+.home-categories-container {
   height: 100vh;
   width: 100vw;
   padding-left: 90px; }
-  .home-projects-container .home-projects__title {
+  .home-categories-container .home-categories__title {
     padding-top: 12vh;
     padding-left: 5.5vw;
     padding-right: 10vw;
     display: flex;
     flex-direction: row; }
-    .home-projects-container .home-projects__title h2 {
+    .home-categories-container .home-categories__title h2 {
       font-style: italic;
       font-size: 54px;
       font-weight: bold;
       letter-spacing: 2px; }
-    .home-projects-container .home-projects__title .home-projects__title-blank {
+    .home-categories-container .home-categories__title .home-categories__title-blank {
       border-bottom: 3px solid #333;
       flex: 1; }
-  .home-projects-container .home-projects {
-    width: 100%;
-    display: flex;
-    flex-direction: row; }
-    .home-projects-container .home-projects .home-project {
+  .home-categories-container .home-categories {
+    padding-top: 8.5vh;
+    padding-left: 4.3vw;
+    padding-right: 3.3vw; }
+    .home-categories-container .home-categories .home-category {
       width: 25%; }
+
+.category {
+  height: 100vh;
+  width: 100vw;
+  padding-left: 90px; }
+  .category .category__title {
+    padding-top: 10.5vh;
+    padding-left: 5.5vw;
+    padding-right: 10vw; }
+    .category .category__title h3 {
+      text-transform: uppercase;
+      font-family: Lato;
+      letter-spacing: 1px; }
+    .category .category__title h2 {
+      text-transform: lowercase;
+      font-size: 60px; }
+  .category .projects {
+    padding-top: 8.5vh;
+    padding-left: 4.3vw;
+    padding-right: 3.3vw; }
+    .category .projects .project {
+      width: 25%; }
+
+.panels {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .panels .panel {
+    padding: 0 1.2vw; }
+    .panels .panel img {
+      width: 100%;
+      margin-bottom: 3vh; }
+    .panels .panel .panel__title {
+      text-align: center; }
+      .panels .panel .panel__title h3 {
+        letter-spacing: 1px;
+        font-size: 25px;
+        font-family: Lato;
+        font-style: italic;
+        font-weight: normal; }
 
 .App {
   width: 100%;
-  min-height: 200vh; }
+  min-height: 100vh; }

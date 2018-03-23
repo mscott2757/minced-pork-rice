@@ -3,7 +3,7 @@ import React from 'react';
 export const NavIcon = ({ icon }) => {
   return (
     <div className='nav__icon-container'>
-      <i className={`fa fa-${icon} fa-2x`}></i>
+      <i className={`fa fa-${icon} fa-lg`}></i>
     </div>
   );
 }

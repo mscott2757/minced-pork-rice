@@ -1,6 +1,6 @@
 .home {
   width: 100%;
-  min-height: 200vh;
+  height: 200vh;
 
 }
 .home-banner {
@@ -58,12 +58,12 @@
   }
 }
 
-.home-projects-container {
+.home-categories-container {
   height: 100vh;
   width: 100vw;
   padding-left: 90px;
 
-  .home-projects__title {
+  .home-categories__title {
     padding-top: 12vh;
     padding-left: 5.5vw;
     padding-right: 10vw;
@@ -77,18 +77,18 @@
       letter-spacing: 2px;
     }
 
-    .home-projects__title-blank {
+    .home-categories__title-blank {
       border-bottom: 3px solid #333;
       flex: 1;
     }
   }
 
-  .home-projects {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
+  .home-categories {
+    padding-top: 8.5vh;
+    padding-left: 4.3vw;
+    padding-right: 3.3vw;
 
-    .home-project {
+    .home-category {
       width: 25%;
     }
   }

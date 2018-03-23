@@ -2,7 +2,7 @@ import React from 'react';
 import Panel from './Panel';
 
 const Category = ({ title, projects, id }) => {
-  const getProjectPath = (project) => {
+  const getPath = (project) => {
     return `/categories/${id}/${project.id}`;
   }
 
@@ -10,11 +10,12 @@ const Category = ({ title, projects, id }) => {
     <div className='category'>
       <div className='category__title'>
         <h3>Projects</h3>
-        <h2>{ title }</h2>
+        <h2>{title}</h2>
       </div>
       <div className='projects panels'>
         {projects.map((project, index) => {
-          return <Panel className='project' {...project} path={getProjectPath(project)} key={project.id} />;
+          // change to key to id later...
+          return <Panel className='project' {...project} path={getPath(project)} key={index} />;
         })}
       </div>
     </div>

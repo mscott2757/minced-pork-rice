@@ -1,33 +1,25 @@
 import squareImg from '../../images/test-square.jpg';
+const exampleDescription = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in metus arcu. Vivamus eget efficitur ante, quis tempus leo. Nunc vitae ante porta, congue nibh ut, mollis tellus. Donec in nisl id tellus aliquet feugiat eget quis lacus. Maecenas ut tortor quam.';
 
 export const justForFun = {
   id: 'just-for-fun',
   title: 'Just For Fun',
   projects: [
     { imgSrc: squareImg,
-      lines: [
-      'FISHBOWL:',
-      'a short film'
-      ]
+      title: 'FISHBOWL: a short film',
+      description: exampleDescription
     },
     { imgSrc: squareImg,
-      lines: [
-        'MOVIE MOMENT',
-        'CHASERS:',
-        'vlog series'
-      ]
+      title: 'MOVIE MOMENT CHASERS: vlog series',
+      description: exampleDescription
     },
     { imgSrc: squareImg,
-      lines: [
-        'WEEKEND',
-        'STATE:',
-        'a photo story'
-      ]
+      title: 'WEEKEND STATE: a photo story',
+      description: exampleDescription
     },
     { imgSrc: squareImg,
-      lines: [
-        'PHOTOSHOOTS'
-      ]
+      title: 'PHOTOSHOOTS',
+      description: exampleDescription
     }
   ]
 }

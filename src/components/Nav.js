@@ -7,19 +7,21 @@ const icons = [
   { icon: 'paperclip' },
 ]
 
+const links = [
+  { className: 'nav__link', text: 'about', path: '/about' },
+  { className: 'nav__link', text: 'projects', path: '/projects' },
+  { className: 'nav__logo', text: 'wc', path: '/' },
+];
+
 const Nav = (props) => {
   return (
     <div className='nav'>
       <ul>
-        <li>
-          <a className='nav__link' href='/about'>About</a>
-        </li>
-        <li>
-          <a className='nav__link' href='/projects'>Projects</a>
-        </li>
-        <li>
-          <a className='nav__logo' href='/'>wc</a>
-        </li>
+        {links.map(({className, path, text }) => {
+          return <li key={path}>
+            <a className={className} href={path}>{text}</a>
+          </li>;
+        })}
       </ul>
       <div className='nav__social'>
         {icons.map((iconProps, index) => <NavIcon {...iconProps} key={index} />)}

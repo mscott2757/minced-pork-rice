@@ -1,5 +1,4 @@
 import React from 'react';
-import Panel from './Panel';
 import ProjectSummary from './ProjectSummary';
 
 const Category = ({ title, projects, id }) => {
@@ -13,10 +12,10 @@ const Category = ({ title, projects, id }) => {
         <h3>Projects</h3>
         <h2>{title}</h2>
       </div>
-      <div className='projects panels'>
+      <div className='projects'>
         {projects.map((project, index) => {
           // change to key to id later...
-          return <Panel className='project' {...project} path={getPath(project)} key={index} />;
+          return <ProjectSummary className='project' {...project} path={getPath(project)} key={index} />;
         })}
       </div>
     </div>

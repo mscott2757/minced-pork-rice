@@ -20,12 +20,49 @@
   }
 
   .projects {
-    padding-top: 8.5vh;
-    padding-left: 4.3vw;
-    padding-right: 3.3vw;
+    padding: 8.5vh 3.3vw 8.5vh 4.2vw;
 
-    .project {
-      width: 25%;
+    .project-summary {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 5.5vh;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .project-summary__thumb {
+        width: 25%;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      .project-summary__body {
+        width: 75%;
+        padding: 2vw 4vw;
+
+        p, h3 {
+          font-family: Lato;
+        }
+
+        h3 {
+          letter-spacing: 1px;
+          font-size: 2.65vh;
+          margin-bottom: 1.8vh;
+        }
+
+        p {
+          font-size: 2.1vh;
+          line-height: 1.4;
+        }
+      }
     }
   }
 }

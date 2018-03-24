@@ -18,7 +18,6 @@
     display: flex;
     flex-direction: row; }
     .nav ul li {
-      list-style-type: none;
       margin-right: 20px;
       display: flex;
       align-items: center; }
@@ -127,11 +126,32 @@
       text-transform: lowercase;
       font-size: 8.5vh; }
   .category .projects {
-    padding-top: 8.5vh;
-    padding-left: 4.3vw;
-    padding-right: 3.3vw; }
-    .category .projects .project {
-      width: 25%; }
+    padding: 8.5vh 3.3vw 8.5vh 4.2vw; }
+    .category .projects .project-summary {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-bottom: 5.5vh; }
+      .category .projects .project-summary:last-child {
+        margin-bottom: 0; }
+      .category .projects .project-summary:hover {
+        cursor: pointer; }
+      .category .projects .project-summary .project-summary__thumb {
+        width: 25%; }
+        .category .projects .project-summary .project-summary__thumb img {
+          width: 100%; }
+      .category .projects .project-summary .project-summary__body {
+        width: 75%;
+        padding: 2vw 4vw; }
+        .category .projects .project-summary .project-summary__body p, .category .projects .project-summary .project-summary__body h3 {
+          font-family: Lato; }
+        .category .projects .project-summary .project-summary__body h3 {
+          letter-spacing: 1px;
+          font-size: 2.65vh;
+          margin-bottom: 1.8vh; }
+        .category .projects .project-summary .project-summary__body p {
+          font-size: 2.1vh;
+          line-height: 1.4; }
 
 .panels {
   width: 100%;

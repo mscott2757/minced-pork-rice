@@ -10,11 +10,17 @@ const icons = [
 const Nav = (props) => {
   return (
     <div className='nav'>
-      <div className='nav__name'>
-        <a href='/'>
-          <p>waverly chao</p>
-        </a>
-      </div>
+      <ul>
+        <li>
+          <a className='nav__link' href='/about'>About</a>
+        </li>
+        <li>
+          <a className='nav__link' href='/projects'>Projects</a>
+        </li>
+        <li>
+          <a className='nav__logo' href='/'>wc</a>
+        </li>
+      </ul>
       <div className='nav__social'>
         {icons.map((iconProps, index) => <NavIcon {...iconProps} key={index} />)}
       </div>

@@ -1,9 +1,10 @@
 import React from 'react';
 import Panel from './Panel';
+import ProjectSummary from './ProjectSummary';
 
 const Category = ({ title, projects, id }) => {
   const getPath = (project) => {
-    return `/categories/${id}/${project.id}`;
+    return `/${id}/${project.id}`;
   }
 
   return (

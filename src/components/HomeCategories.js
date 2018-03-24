@@ -13,7 +13,7 @@ const HomeCategories = ({ categories }) => {
       <div className='home-categories panels'>
         {categories.map((category, index) => {
           let { id } = category;
-          return <Panel className='home-category' {...category} key={id} path={`/categories/${id}`} />;
+          return <Panel className='home-category' {...category} key={id} path={`/${id}`} />;
         })}
       </div>
     </div>

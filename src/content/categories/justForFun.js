@@ -5,21 +5,29 @@ export const justForFun = {
   id: 'just-for-fun',
   title: 'Just For Fun',
   projects: [
-    { imgSrc: squareImg,
+    {
+      imgSrc: squareImg,
       title: 'FISHBOWL: a short film',
-      description: exampleDescription
+      description: exampleDescription,
+      id: 'fishbowl'
     },
-    { imgSrc: squareImg,
+    {
+      imgSrc: squareImg,
       title: 'MOVIE MOMENT CHASERS: vlog series',
-      description: exampleDescription
+      description: exampleDescription,
+      id: 'movie-moment-chasers'
     },
-    { imgSrc: squareImg,
+    {
+      imgSrc: squareImg,
       title: 'WEEKEND STATE: a photo story',
-      description: exampleDescription
+      description: exampleDescription,
+      id: 'weekend-state'
     },
-    { imgSrc: squareImg,
+    {
+      imgSrc: squareImg,
       title: 'PHOTOSHOOTS',
-      description: exampleDescription
+      description: exampleDescription,
+      id: 'photoshoots'
     }
   ]
 }

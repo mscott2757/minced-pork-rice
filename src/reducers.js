@@ -1,8 +1,9 @@
-import { home, categories } from './content/';
+import { home, categories, projects } from './content/';
 
 const mincedPorkRice = (state = {
   home,
-  categories
+  categories,
+  projects
 }, action) => {
   return state;
 }

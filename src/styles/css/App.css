@@ -105,11 +105,33 @@
       border-bottom: 3px solid #333;
       flex: 1; }
   .home-categories-container .home-categories {
-    padding-top: 8.5vh;
-    padding-left: 4.3vw;
-    padding-right: 3.3vw; }
+    padding: 8.5vh 4.3vw;
+    padding-bottom: 0; }
     .home-categories-container .home-categories .home-category {
       width: 25%; }
+
+.project {
+  min-height: 100vh;
+  width: 100vw;
+  padding-left: 90px; }
+  .project .project-banner {
+    padding: 2.2vh 2.7vw;
+    width: 100%;
+    height: 37vh;
+    background-color: #ddd;
+    display: flex;
+    align-items: flex-end; }
+    .project .project-banner .project-banner__title {
+      display: flex;
+      flex-direction: row; }
+      .project .project-banner .project-banner__title h2 {
+        color: #fff;
+        margin-right: 10px;
+        text-transform: lowercase;
+        font-size: 2.5em;
+        letter-spacing: 1px; }
+      .project .project-banner .project-banner__title .project-banner__category {
+        font-style: italic; }
 
 .category {
   height: 100vh;
@@ -126,7 +148,7 @@
       text-transform: lowercase;
       font-size: 8.5vh; }
   .category .projects {
-    padding: 8.5vh 3.3vw 8.5vh 4.2vw; }
+    padding: 8.5vh 4.2vw; }
     .category .projects .project-summary {
       display: flex;
       flex-direction: row;

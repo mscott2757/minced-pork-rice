@@ -1,10 +1,16 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { scroller } from 'react-scroll';
 import HomeBanner from './HomeBanner';
 import HomeCategories from './HomeCategories';
 
-const Home = ({ categories, titles }) => {
-  const scrollToProjects = () => {
+class Home extends Component {
+  componentDidMount() {
+    if (this.props.shouldScroll) {
+      this.scrollToProjects();
+    }
+  }
+
+  scrollToProjects = () => {
 		scroller.scrollTo('homeCategories', {
 			duration: 500,
 			delay: 50,
@@ -12,12 +18,15 @@ const Home = ({ categories, titles }) => {
 		})
   }
 
-  return (
-    <div className='home'>
-      <HomeBanner titles={titles} handleScroll={scrollToProjects} />
-      <HomeCategories categories={categories} />
-    </div>
-  );
+  render() {
+    const { categories, titles } = this.props;
+    return (
+      <div className='home'>
+        <HomeBanner titles={titles} handleScroll={this.scrollToProjects} />
+        <HomeCategories categories={categories} />
+      </div>
+    );
+  }
 }
 
 export default Home;

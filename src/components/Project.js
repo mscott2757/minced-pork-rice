@@ -11,6 +11,8 @@ const Project = ({ title, imgSrc, body, category }) => {
           <h2>/</h2>
           <h2>{title}</h2>
         </div>
+      </div>
+      <div className='project-body'>
         {body}
       </div>
     </div>

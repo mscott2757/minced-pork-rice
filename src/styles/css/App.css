@@ -110,6 +110,28 @@
     .home-categories-container .home-categories .home-category {
       width: 25%; }
 
+.panels {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .panels a {
+    display: block; }
+  .panels .panel {
+    padding: 0 1.2vw; }
+    .panels .panel:hover {
+      cursor: pointer; }
+    .panels .panel img {
+      width: 100%;
+      margin-bottom: 3vh; }
+    .panels .panel .panel__title {
+      text-align: center; }
+      .panels .panel .panel__title h3 {
+        letter-spacing: 1px;
+        font-size: 3.6vh;
+        font-family: Lato;
+        font-style: italic;
+        font-weight: normal; }
+
 .project {
   min-height: 100vh;
   width: 100vw;
@@ -132,6 +154,28 @@
         letter-spacing: 1px; }
       .project .project-banner .project-banner__title .project-banner__category {
         font-style: italic; }
+  .project .project-body {
+    padding: 7.5vh 10vw; }
+    .project .project-body p, .project .project-body h3 {
+      font-family: Lato;
+      margin-bottom: 2.6vh; }
+    .project .project-body h3 {
+      font-style: italic;
+      font-weight: normal;
+      font-size: 1.5em;
+      letter-spacing: 1px;
+      text-transform: uppercase; }
+    .project .project-body p {
+      padding: 0 2.3vw;
+      text-align: center;
+      line-height: 1.8;
+      font-size: 0.95em;
+      -ms-word-break: break-all;
+      word-break: break-all;
+      word-break: break-word;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto; }
 
 .category {
   height: 100vh;

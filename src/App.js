@@ -4,10 +4,10 @@ import { Nav, Projects } from './components';
 import { CategoryContainer, ProjectContainer, ResumeOverlayContainer, HomeContainer } from './containers/';
 import { Route, Switch } from 'react-router-dom';
 
-const App = ({ resumeVisible, handleToggleResume }) => {
+const App = ({ resumeVisible, handleToggleResume, navProps }) => {
   return (
     <div className={"App " + (resumeVisible ? 'App--no-scroll' : '')}>
-      <Nav handleToggleResume={handleToggleResume} />
+      <Nav {...navProps} handleToggleResume={handleToggleResume} />
       <Switch>
         <Route exact path="/" component={HomeContainer} />
         <Route exact path="/projects" component={Projects} />

@@ -26,7 +26,7 @@ class ResumeOverlay extends Component {
   }
 
   render() {
-    const { visible, pdfSrc, handleToggleResume } = this.props;
+    const { visible, pdfSrc, downloadURL, handleToggleResume } = this.props;
     if (!visible) {
       return null;
     }
@@ -35,6 +35,12 @@ class ResumeOverlay extends Component {
         <Document file={pdfSrc} onClick={this.stopToggleResume}>
           <Page renderAnnotations={false} renderTextLayer={false} pageNumber={1} />
         </Document>
+        <div className='resume-overlay__close' onClick={this.handleToggleResume}>
+          <i className={`fa fa-times fa-sm`}></i>
+        </div>
+        <div className='resume-overlay__download'>
+          <a href={downloadURL}>download</a>
+        </div>
       </div>
     );
   }

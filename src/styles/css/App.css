@@ -228,8 +228,9 @@
   width: 100vw;
   height: 100vh;
   overflow: scroll;
-  background: white;
-  background: rgba(255, 255, 255, 0.9);
+  color: white;
+  background: black;
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   padding: 15px; }
@@ -239,7 +240,26 @@
     max-width: 90vw;
     width: 900px;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 15px; }
+  .resume-overlay__close {
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    right: 0; }
+    .resume-overlay__close:hover {
+      opacity: 0.7;
+      cursor: pointer; }
+  .resume-overlay__download {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    padding: 15px; }
+    .resume-overlay__download a {
+      color: white; }
+      .resume-overlay__download a:hover {
+        opacity: 0.7; }
 
 .panels {
   width: 100%;
@@ -264,7 +284,7 @@
         font-weight: normal; }
 
 .App {
-  width: 100%;
-  overflow: hidden; }
+  width: 100%; }
   .App--no-scroll {
-    height: 100vh; }
+    height: 100vh;
+    overflow: hidden; }

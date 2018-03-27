@@ -1,18 +1,7 @@
 import React from 'react';
 import { NavIconLink } from './utils';
 
-const icons = [
-  { icon: 'linkedin', path: 'https://www.linkedin.com/in/waverlychao/' },
-  { icon: 'instagram', path: 'https://www.instagram.com/ibelieveinwaves/' },
-]
-
-const links = [
-  { className: 'nav__link', text: 'about', path: '/about' },
-  { className: 'nav__link', text: 'projects', path: '/projects' },
-  { className: 'nav__logo', text: 'wc', path: '/' },
-];
-
-const Nav = ({ handleToggleResume }) => {
+const Nav = ({ handleToggleResume, icons, links }) => {
   return (
     <div className='nav'>
       <ul>

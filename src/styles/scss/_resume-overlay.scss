@@ -5,9 +5,10 @@
   width: 100vw;
   height: 100vh;
   overflow: scroll;
+  color: white;
 
-  background: rgb(255, 255, 255);
-  background: rgba(255, 255, 255, 0.9);
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.7);
 
   display: flex;
   justify-content: center;
@@ -23,6 +24,34 @@
       width: 900px;
       display: flex;
       justify-content: center;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    right: 0;
+
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
+  }
+
+  &__download {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 14px;
+    padding: 15px;
+
+    a {
+      color: white;
+      &:hover {
+        opacity: 0.7;
+      }
     }
   }
 }

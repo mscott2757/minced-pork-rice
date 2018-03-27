@@ -1,14 +1,14 @@
-import { home, categories, projects } from './content/';
-import pdfSrc from './resume.pdf';
+import { home, categories, projects, nav, resume } from './content/';
 import { TOGGLE_RESUME } from './actions';
 
 const mincedPorkRice = (state = {
   home,
   categories,
   projects,
+  nav,
   resume: {
     visible: false,
-    pdfSrc
+    ...resume
   }
 }, action) => {
   switch (action.type) {

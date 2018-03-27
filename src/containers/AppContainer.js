@@ -3,9 +3,10 @@ import App from '../App';
 import { withRouter } from 'react-router-dom';
 import { toggleResume } from '../actions';
 
-const mapStateToProps = ({ resume }) => {
+const mapStateToProps = ({ resume, nav }) => {
   return {
-    resumeVisible: resume.visible
+    resumeVisible: resume.visible,
+    navProps: nav
   }
 }
 

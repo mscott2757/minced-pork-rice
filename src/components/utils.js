@@ -1,9 +1,11 @@
 import React from 'react';
 
-export const NavIcon = ({ icon }) => {
+export const NavIconLink = ({ icon, path }) => {
   return (
     <div className='nav__icon-container'>
-      <i className={`fa fa-${icon} fa-lg`}></i>
+      <a href={path}>
+        <i className={`fa fa-${icon} fa-lg`}></i>
+      </a>
     </div>
   );
 }

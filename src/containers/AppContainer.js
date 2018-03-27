@@ -1,5 +1,7 @@
 import { connect } from 'react-redux';
 import App from '../App';
+import { withRouter } from 'react-router-dom';
+import { toggleResume } from '../actions';
 
 const mapStateToProps = ({ resume }) => {
   return {
@@ -8,7 +10,11 @@ const mapStateToProps = ({ resume }) => {
 }
 
 const mapDispatchToProps = (dispatch) => {
-  return {}
+  return {
+    handleToggleResume: () => {
+      dispatch(toggleResume());
+    }
+  }
 }
 
 const AppContainer = connect(
@@ -16,4 +22,4 @@ const AppContainer = connect(
   mapDispatchToProps
 )(App);
 
-export default AppContainer;
+export default withRouter(AppContainer);

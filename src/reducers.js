@@ -7,7 +7,7 @@ const mincedPorkRice = (state = {
   categories,
   projects,
   resume: {
-    visible: true,
+    visible: false,
     pdfSrc
   }
 }, action) => {

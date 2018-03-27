@@ -1,10 +1,9 @@
 import React from 'react';
-import { NavIcon } from './utils';
+import { NavIconLink } from './utils';
 
 const icons = [
-  { icon: 'linkedin' },
-  { icon: 'instagram' },
-  { icon: 'paperclip' },
+  { icon: 'linkedin', path: 'https://www.linkedin.com/in/waverlychao/' },
+  { icon: 'instagram', path: 'https://www.instagram.com/ibelieveinwaves/' },
 ]
 
 const links = [
@@ -13,7 +12,7 @@ const links = [
   { className: 'nav__logo', text: 'wc', path: '/' },
 ];
 
-const Nav = (props) => {
+const Nav = ({ handleToggleResume }) => {
   return (
     <div className='nav'>
       <ul>
@@ -24,7 +23,10 @@ const Nav = (props) => {
         })}
       </ul>
       <div className='nav__social'>
-        {icons.map((iconProps, index) => <NavIcon {...iconProps} key={index} />)}
+        {icons.map((iconProps, index) => <NavIconLink {...iconProps} key={index} />)}
+        <div className='nav__icon-container' onClick={handleToggleResume}>
+          <i className={`fa fa-paperclip fa-lg`}></i>
+        </div>
       </div>
     </div>
   );

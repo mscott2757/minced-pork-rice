@@ -46,14 +46,16 @@
       display: flex;
       justify-content: center;
       margin-bottom: 15px; }
+      .nav .nav__social .nav__icon-container:hover {
+        opacity: 0.7;
+        cursor: pointer; }
       .nav .nav__social .nav__icon-container i {
         padding: 0 2px; }
       .nav .nav__social .nav__icon-container:last-child {
         margin-bottom: 0; }
 
 .home {
-  width: 100%;
-  height: 200vh; }
+  width: 100%; }
 
 .home-banner {
   height: 100vh;
@@ -263,6 +265,6 @@
 
 .App {
   width: 100%;
-  min-height: 100vh; }
+  overflow: hidden; }
   .App--no-scroll {
-    overflow: hidden; }
+    height: 100vh; }

@@ -5,10 +5,15 @@
 @import 'home';
 @import 'project';
 @import 'category';
+@import 'resume-overlay';
 @import 'shared';
 
 .App {
   width: 100%;
   min-height: 100vh;
+
+  &--no-scroll {
+    overflow: hidden;
+  }
 }
 

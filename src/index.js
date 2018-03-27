@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './styles/css/index.css';
-import App from './App';
+import { AppContainer } from './containers';
 import registerServiceWorker from './registerServiceWorker';
 import mincedPorkRice from './reducers';
 import { createStore } from 'redux';
@@ -13,7 +13,7 @@ const store = createStore(mincedPorkRice);
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <App />
+      <AppContainer />
     </BrowserRouter>
   </Provider>,
   document.getElementById('root'));

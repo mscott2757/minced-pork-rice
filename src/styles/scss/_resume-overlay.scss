@@ -1,0 +1,28 @@
+.resume-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.9);
+
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+
+  .react-pdf {
+    &__Document {
+      max-width: 100%;
+    }
+
+    &__Page {
+      max-width: 90vw;
+      width: 900px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

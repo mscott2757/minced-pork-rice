@@ -219,6 +219,26 @@
           font-size: 2.1vh;
           line-height: 1.4; }
 
+.resume-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
+  background: white;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  justify-content: center;
+  padding: 15px; }
+  .resume-overlay .react-pdf__Document {
+    max-width: 100%; }
+  .resume-overlay .react-pdf__Page {
+    max-width: 90vw;
+    width: 900px;
+    display: flex;
+    justify-content: center; }
+
 .panels {
   width: 100%;
   display: flex;
@@ -244,3 +264,5 @@
 .App {
   width: 100%;
   min-height: 100vh; }
+  .App--no-scroll {
+    overflow: hidden; }

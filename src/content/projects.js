@@ -15,5 +15,16 @@ export const projects = {
         <p>{exampleText2}</p>
       </div>
     )
+  },
+  'dt-recruit': {
+    title: 'Design Thinking',
+    body: (
+      <div>
+        <h3>Background</h3>
+        <p>{exampleText1}</p>
+        <h3>Problem Statement</h3>
+        <p>{exampleText2}</p>
+      </div>
+    )
   }
 }

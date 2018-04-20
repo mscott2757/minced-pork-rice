@@ -158,20 +158,14 @@
       text-transform: uppercase;
       letter-spacing: 1px; }
   .project .project-body {
-    padding: 7.5vh 10vw; }
-    .project .project-body p, .project .project-body h3 {
-      font-family: Lato;
-      margin-bottom: 2.6vh; }
-    .project .project-body h3 {
-      font-style: italic;
-      font-weight: normal;
-      font-size: 1.5em;
-      letter-spacing: 1px;
-      text-transform: uppercase; }
+    padding: 7.5vh 16vw; }
     .project .project-body p {
+      font-family: Lato;
+      margin-bottom: 5.6vh;
       padding: 0 2.3vw;
-      text-align: center;
-      line-height: 1.8;
+      text-align: left;
+      text-indent: 3vw;
+      line-height: 1.5;
       font-size: 0.95em;
       -ms-word-break: break-all;
       word-break: break-all;
@@ -179,6 +173,28 @@
       -webkit-hyphens: auto;
       -moz-hyphens: auto;
       hyphens: auto; }
+    .project .project-body h2 {
+      font-family: Lato;
+      margin-bottom: 4.6vh;
+      line-height: 1.5; }
+    .project .project-body h3 {
+      font-family: Lato;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 1.5em;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 2.6vh; }
+    .project .project-body ol li {
+      margin-bottom: 15px;
+      line-height: 1.5; }
+    .project .project-body__img {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2.6vh; }
+      .project .project-body__img img {
+        width: 50%;
+        height: 100%; }
 
 .category {
   height: 100vh;
@@ -309,7 +325,7 @@
 .about {
   padding: 90px;
   min-height: 100vh;
-  width: 100%; }
+  width: 100vw; }
 
 .App {
   width: 100%; }

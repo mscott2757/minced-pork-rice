@@ -1,3 +1,19 @@
+### Project Structure
+In `src/content/projects.js`, `projects` is a Javascript object of the form
+
+Field | Value
+--- | ---
+`[projectId]` | `project`
+`[projectId2]` | `project2`
+`[...]` | `...`
+
+Each project is a Javascript object of the form
+
+Field | Value
+--- | ---
+`title` | string
+`body`| JSX Expression
+
 ### Adding an image to project
 Add image file to images folder
 

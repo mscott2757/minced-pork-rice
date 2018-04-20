@@ -59,5 +59,16 @@
       font-size: 0.95em;
 			@include body-break-word();
     }
+
+    &__img {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 2.6vh;
+
+      img {
+        width: 50%;
+        height: 100%;
+      }
+    }
   }
 }

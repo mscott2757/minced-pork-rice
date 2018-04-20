@@ -1,7 +1,12 @@
 import React from 'react';
 
 const About = (props) => {
-  return null;
+  return (
+  	<div className='about'>
+  	<div className="about-title'">Title</div>
+
+  	</div>
+  );
 }
 
 export default About;

@@ -14,20 +14,25 @@
     align-items: flex-end;
 
     .project-banner__title {
-      display: flex;
-      flex-direction: row;
 
       h2 {
         color: #fff;
         margin-right: 10px;
-        text-transform: lowercase;
         font-size: 2.5em;
         letter-spacing: 1px;
+        text-transform: lowercase
       }
 
       .project-banner__category {
-        font-style: italic;
+        font-family: Lato;
       }
+
+      h3 {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
     }
   }
 

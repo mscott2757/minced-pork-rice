@@ -6,9 +6,8 @@ const Project = ({ title, imgSrc, body, category }) => {
       <div className='project-banner'>
         <div className='project-banner__title'>
           <a href={`/${category.id}`}>
-            <h2 className='project-banner__category'>{category.title}</h2>
+            <h3 className='project-banner__category'>{category.title}</h3>
           </a>
-          <h2>/</h2>
           <h2>{title}</h2>
         </div>
       </div>

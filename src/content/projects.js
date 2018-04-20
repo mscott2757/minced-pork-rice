@@ -1,12 +1,38 @@
 import React from 'react';
+import recruit from '../images/hi.jpg'
 
-const exampleText1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies tellus est, id aliquet orci rhoncus rutrum. Aliquam id enim mollis, ornare dolor sit amet, fringilla massa. Maecenas congue rhoncus dolor et consequat. Curabitur eget scelerisque tellus. Quisque posuere lectus ut ipsum finibus lobortis.';
+const exampleText1 = 'Hunting for a new job right out of college can be a scary process. We set out to design an experience that would alleviate some of those fears while building upon relevant skills students would need in the workplace. ';
 
-const exampleText2 = 'Ut aliquet hendrerit velit eu tempor. Morbi lacus lacus, consectetur id odio at, congue auctor purus. Vivamus a ex enim. Donec aliquam fringilla sapien id mattis. Phasellus tristique eget odio non porttitor. Morbi fringilla magna vitae ex porttitor, sit amet pretium ipsum posuere.';
+const exampleText2 = 'How might we engage students in a recruiting experience that builds up their confidence and also gives us an opportunity to build a relationship before they ever set foot in the company?';
+
+const exampleText3 = 'We first reached out to student organizations at UC Berkeley and SJSU through our alumni network and identified groups to partner with. We then engaged the student leaders at each campus with a mini Design Thinking session to better understand their anxieties, concerns, career dreams, and long-term goals. ';
+
+
+
 
 export const projects = {
-  'fishbowl': {
-    title: 'fishbowl',
+ /** STRATEGY PROJECTS **/
+
+  'dt-recruit': {
+    title: 'Redesigned Recruitment Experience',
+    body: (
+      <div>
+        <h3>Background</h3>
+        <p>{exampleText1}</p>
+        
+        <img src={recruit}></img>
+
+        <h2>{exampleText2}</h2>
+        <p></p>
+
+        <h3>Process</h3>
+        <p>{exampleText3}</p>
+      </div>
+    )
+  },
+
+  'dt-adient': {
+    title: 'Digital Transformation Roadmap',
     body: (
       <div>
         <h3>Background</h3>
@@ -16,8 +42,11 @@ export const projects = {
       </div>
     )
   },
-  'dt-recruit': {
-    title: 'Design Thinking',
+
+ /** DESIGN PROJECTS **/
+
+ 'freelance': {
+    title: 'Freelance',
     body: (
       <div>
         <h3>Background</h3>
@@ -26,5 +55,44 @@ export const projects = {
         <p>{exampleText2}</p>
       </div>
     )
-  }
+  },
+
+ 'goals': {
+    title: '#Goals: A smarter way to plan finances',
+    body: (
+      <div>
+        <h3>Background</h3>
+        <p>{exampleText1}</p>
+        <h3>Problem Statement</h3>
+        <p>{exampleText2}</p>
+      </div>
+    )
+  },
+
+   'portfolio': {
+    title: 'Portfolio redesign',
+    body: (
+      <div>
+        <h3>Background</h3>
+        <p>{exampleText1}</p>
+        <h3>Problem Statement</h3>
+        <p>{exampleText2}</p>
+      </div>
+    )
+  },
+
+ /** FOR FUN PROJECTS **/
+
+  'fishbowl': {
+    title: 'Fishbowl: A short film',
+    body: (
+      <div>
+        <h3>Background</h3>
+        <p>{exampleText1}</p>
+        <h3>Problem Statement</h3>
+        <p>{exampleText2}</p>
+      </div>
+    )
+  },
+
 }

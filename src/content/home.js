@@ -1,35 +1,42 @@
 import squareImg from '../images/test-square.jpg';
+import strategy from '../images/squares/international.jpg';
+import design from '../images/design/freelance.jpg';
+import forfun from '../images/squares/banana.jpg';
+import resume from '../images/design/portfolio.jpg';
+
+/** 4 boxes **/
 
 export const home = {
   categories: [
-    { imgSrc: squareImg,
+
+    /** 
+    
+    for two lines
+    
+    'Digital',
+    'Screens'
+
+    **/
+
+    { imgSrc: strategy,
       lines: [
-      'Creative',
-      'Workshops'
+        'Service & Strategic Design',
       ],
       id: 'creative-workshops'
     },
-    { imgSrc: squareImg,
+    { imgSrc: design,
       lines: [
-        'Digital',
-        'Screens'
+        'Visual Design'
       ],
       id: 'digital-screens'
     },
-    { imgSrc: squareImg,
+    { imgSrc: forfun,
       lines: [
-        'Interactive',
-        'Experiences'
-      ],
-      id: 'interactive-experiences'
-    },
-    { imgSrc: squareImg,
-      lines: [
-        'Just For',
-        'Fun'
+        'Just for fun'
       ],
       id: 'just-for-fun'
-    }
+    },
+   
   ],
   titles: [
     { title: "I'm Waverly", type: 'name' },

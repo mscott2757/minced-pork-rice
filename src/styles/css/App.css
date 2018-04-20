@@ -107,10 +107,10 @@
       border-bottom: 3px solid #333;
       flex: 1; }
   .home-categories-container .home-categories {
-    padding: 8.5vh 4.3vw;
+    padding: 8.5vh 9.3vw;
     padding-bottom: 0; }
     .home-categories-container .home-categories .home-category {
-      width: 25%; }
+      width: 33.3%; }
 
 .panels {
   width: 100%;
@@ -119,7 +119,7 @@
   .panels a {
     display: block; }
   .panels .panel {
-    padding: 0 1.2vw; }
+    padding: 0 2vw; }
     .panels .panel:hover {
       cursor: pointer; }
     .panels .panel img {
@@ -145,17 +145,18 @@
     background-color: #ddd;
     display: flex;
     align-items: flex-end; }
-    .project .project-banner .project-banner__title {
-      display: flex;
-      flex-direction: row; }
-      .project .project-banner .project-banner__title h2 {
-        color: #fff;
-        margin-right: 10px;
-        text-transform: lowercase;
-        font-size: 2.5em;
-        letter-spacing: 1px; }
-      .project .project-banner .project-banner__title .project-banner__category {
-        font-style: italic; }
+    .project .project-banner .project-banner__title h2 {
+      color: #fff;
+      margin-right: 10px;
+      font-size: 2.5em;
+      letter-spacing: 1px;
+      text-transform: lowercase; }
+    .project .project-banner .project-banner__title .project-banner__category {
+      font-family: Lato; }
+    .project .project-banner .project-banner__title h3 {
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 1px; }
   .project .project-body {
     padding: 7.5vh 10vw; }
     .project .project-body p, .project .project-body h3 {
@@ -194,7 +195,7 @@
       text-transform: lowercase;
       font-size: 8.5vh; }
   .category .projects {
-    padding: 8.5vh 4.2vw; }
+    padding: 8.5vh 14.2vw; }
     .category .projects .project-summary {
       display: flex;
       flex-direction: row;
@@ -268,7 +269,7 @@
   .panels a {
     display: block; }
   .panels .panel {
-    padding: 0 1.2vw; }
+    padding: 0 2vw; }
     .panels .panel:hover {
       cursor: pointer; }
     .panels .panel img {
@@ -282,6 +283,33 @@
         font-family: Lato;
         font-style: italic;
         font-weight: normal; }
+
+.panels {
+  width: 100%;
+  display: flex;
+  flex-direction: row; }
+  .panels a {
+    display: block; }
+  .panels .panel {
+    padding: 0 2vw; }
+    .panels .panel:hover {
+      cursor: pointer; }
+    .panels .panel img {
+      width: 100%;
+      margin-bottom: 3vh; }
+    .panels .panel .panel__title {
+      text-align: center; }
+      .panels .panel .panel__title h3 {
+        letter-spacing: 1px;
+        font-size: 3.6vh;
+        font-family: Lato;
+        font-style: italic;
+        font-weight: normal; }
+
+.about {
+  padding: 90px;
+  min-height: 100vh;
+  width: 100%; }
 
 .App {
   width: 100%; }

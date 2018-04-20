@@ -29,7 +29,7 @@ const images = {
 
 /** dt adient**/
 
-  'fastcar': require('./strategy/dt-recruit/1.png'),  
+  'fastcar': require('./strategy/dt-adient/1.png'),  
 
 /** dt recruit**/
 
@@ -39,6 +39,8 @@ const images = {
   'thinking': require('./strategy/dt-recruit/4.jpg'),  
   'fb': require('./strategy/dt-recruit/5.png'),      
   'empathy': require('./strategy/dt-recruit/6.png'),  
+
+}
 
 export default images;
 

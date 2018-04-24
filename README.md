@@ -1,8 +1,15 @@
 ## Categories
 
 ### Category Structure
-In `src/content/categories/` each category is a Javascript object of the
-form
+In `src/content/categories/` each category is a Javascript object of the form
+
+Field | Value
+--- | ---
+`id` | string unique identifier
+`title` | string
+`projects` | array
+
+Each category has a list of projects where each project is a Javascript object of the form
 
 Field | Value
 --- | ---

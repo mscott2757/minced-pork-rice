@@ -1,3 +1,17 @@
+## Categories
+
+### Category Structure
+In `src/content/categories/` each category is a Javascript object of the
+form
+
+Field | Value
+--- | ---
+`id` | string unique identifier
+`title` | string
+`description` | string
+`imgSrc` | imported image
+`externalLink` | string (optional: takes precedence over internal routing link if present)
+
 ## Projects
 
 ### Project Structure

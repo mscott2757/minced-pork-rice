@@ -1,9 +1,13 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-const ProjectSummary = ({ imgSrc, className = '', path, history, title, description }) => {
+const ProjectSummary = ({ imgSrc, className = '', path, history, title, description, externalLink }) => {
   const handleClick = () => {
-    history.push(path);
+    if (externalLink) {
+      window.location.href = externalLink;
+    } else {
+      history.push(path);
+    }
   }
 
   return (

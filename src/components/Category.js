@@ -6,9 +6,7 @@ class Category extends Component {
     window.scrollTo(0,0);
   }
 
-  getPath = (project) => {
-    return `/${this.props.id}/${project.id}`;
-  }
+  getPath = (project) => `/${this.props.id}/${project.id}`;
 
   render() {
     const { title, projects } = this.props;
@@ -19,9 +17,8 @@ class Category extends Component {
           <h2>{title}</h2>
         </div>
         <div className='projects'>
-          {projects.map((project, index) => {
-            // change to key to id later...
-            return <ProjectSummary className='project' {...project} path={this.getPath(project)} key={index} />;
+          {projects.map((project) => {
+            return <ProjectSummary className='project' {...project} path={this.getPath(project)} key={project.id} />;
           })}
         </div>
       </div>

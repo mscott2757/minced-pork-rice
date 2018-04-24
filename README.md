@@ -1,3 +1,5 @@
+## Projects
+
 ### Project Structure
 In `src/content/projects.js`, `projects` is a Javascript object of the form
 
@@ -31,8 +33,6 @@ Import `ProjectImg` component, then use in project `body` JSX. Set `src` in comp
 import { ProjectImg } from './utils';
 
 export const projects = {
- /** STRATEGY PROJECTS **/
-
   'dt-recruit': {
     title: 'Redesigned Recruitment Experience',
     body: (
@@ -40,6 +40,29 @@ export const projects = {
         <h3>Background</h3>
         <p>Some other text</p>
         <ProjectImg src='filename' />
+      </div>
+    )
+  },
+```
+
+### Adding a quote to project
+Import `Quote` component, then use in project `body` JSX as a wrapper
+for paragraphs.
+
+`src/content/projects.js`
+```javascript
+import { ProjectImg } from './utils';
+
+export const projects = {
+  'dt-recruit': {
+    title: 'Redesigned Recruitment Experience',
+    body: (
+      <div>
+        <h3>Background</h3>
+        <Quote>
+          <p>Some other text</p>
+          <p>Some more text</p>
+        </Quote>
       </div>
     )
   },

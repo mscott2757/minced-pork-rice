@@ -42,7 +42,8 @@ export const projects = {
         <ProjectImg src='filename' />
       </div>
     )
-  },
+  }
+}
 ```
 
 ### Adding a quote to project
@@ -65,5 +66,6 @@ export const projects = {
         </Quote>
       </div>
     )
-  },
+  }
+}
 ```

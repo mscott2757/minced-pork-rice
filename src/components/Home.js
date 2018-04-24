@@ -5,8 +5,8 @@ import HomeCategories from './HomeCategories';
 
 class Home extends Component {
   componentDidMount() {
-    if (this.props.shouldScroll) {
-      this.scrollToProjects();
+    if (this.props.projects) {
+      this.initProjects();
     }
   }
 
@@ -15,6 +15,14 @@ class Home extends Component {
 			duration: 500,
 			delay: 50,
 			smooth: true,
+		})
+  }
+
+  initProjects = () => {
+		scroller.scrollTo('homeCategories', {
+			duration: 0,
+			delay: 0,
+			smooth: false,
 		})
   }
 

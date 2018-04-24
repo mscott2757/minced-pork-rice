@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProjectImg } from './utils';
+import { ProjectImg, Quote } from './utils';
 
 
 const exampleText1 = 'Hunting for a new job right out of college can be a scary process. We set out to design an experience that would alleviate some of those fears while building upon relevant skills students would need in the workplace. ';
@@ -7,12 +7,6 @@ const exampleText1 = 'Hunting for a new job right out of college can be a scary 
 const exampleText2 = 'How might we engage students in a recruiting experience that builds up their confidence and also gives us an opportunity to build a relationship before they ever set foot in the company?';
 
 const exampleText3 = 'We first reached out to student organizations at UC Berkeley and SJSU through our alumni network and identified groups to partner with. We then engaged the student leaders at each campus with a mini Design Thinking session to better understand their anxieties, concerns, career dreams, and long-term goals. ';
-
-
-
-
-
-
 
 export const projects = {
  /** STRATEGY PROJECTS **/
@@ -23,7 +17,6 @@ export const projects = {
       <div>
         <h3>Background</h3>
         <p>Hunting for a new job right out of college can be a scary process. We set out to design an experience that would alleviate some of those fears while building upon relevant skills students would need in the workplace.</p>
-    
 
         <h2>How might we engage students in a recruiting experience that builds up their confidence and also gives us an opportunity to build a relationship before they ever set foot in the company?</h2>
 
@@ -40,7 +33,7 @@ export const projects = {
         </p>
 
         <p>We ultimately had exposure to 1000+ students across the two campuses’ design-a-thons, with 150+ sign ups and 80 final participants. The top 3 teams at each campus were extended opportunities to interview, resulting in offers for a handful of candidates.</p>
-  
+
       </div>
     )
   },
@@ -51,12 +44,12 @@ export const projects = {
       <div>
         <h3>Background</h3>
         <p>When you're part of a company in which success is defined as doing things business as usual, there's not much incentive to change things up. We set out to infuse elements of human centered design and innovation to empower and enable our client to best tackle the disruption they were seeing in their industry.</p>
-        
+
         <h2>How might we create an innovative experience that can transform the culture, strategy, and priorities of a global automobile company from the inside out?
         </h2>
 
         <ProjectImg src='test-square' />
-      
+
         <h3>Process</h3>
 
         <p>Before we could design this experience, we had to first understand our client’s overall work culture and existing processes. We went onsite to immerse ourselves in their environment and interviewed individuals across a variety of roles ranging from both the IT and business side. 
@@ -99,7 +92,7 @@ export const projects = {
       <div>
         <h3>Background</h3>
         <p>Financial planning can be ambiguous and intimidating for students and young professionals. We wanted to design a platform to make financial planning more approachable and relevant, seamlessly integrated into each Millennial’s busy lifestyle.</p>
-        
+
         <h2>HMW...</h2>
 
         <ProjectImg src='youngppl' />
@@ -118,7 +111,7 @@ export const projects = {
 
         <ProjectImg src='journal' />
 
-        <p>I drew some wireframes and went to test out our ideas with the users we had originally interviewed. They gave us great feedback and told us what features they liked, did not really need, and wanted. One example was the name of our app - our original name WingIT appeared to give off a careless vibe, which took away from the integrity of our financial planning app. 
+        <p>I drew some wireframes and went to test out our ideas with the users we had originally interviewed. They gave us great feedback and told us what features they liked, did not really need, and wanted. One example was the name of our app - our original name WingIT appeared to give off a careless vibe, which took away from the integrity of our financial planning app.
         </p>
 
         <ProjectImg src='wire1' />
@@ -143,7 +136,7 @@ export const projects = {
     )
   },
 
-   'portfolio': {
+ 'portfolio': {
     title: 'Portfolio redesign',
     body: (
       <div>
@@ -163,10 +156,12 @@ export const projects = {
       <div>
         <h3>Background</h3>
         <p>{exampleText1}</p>
+        <Quote>
+          <p>{exampleText3}</p>
+        </Quote>
         <h3>Problem Statement</h3>
         <p>{exampleText2}</p>
       </div>
     )
   },
-
 }

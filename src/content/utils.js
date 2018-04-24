@@ -8,3 +8,11 @@ export const ProjectImg = ({ src }) => {
     </div>
   );
 }
+
+export const Quote = ({ children }) => {
+  return (
+    <div className='project-body__quote'>
+      {children}
+    </div>
+  );
+}

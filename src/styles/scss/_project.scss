@@ -39,6 +39,7 @@
   .project-body {
     padding: 7.5vh 16vw;
 
+
     p {
       font-family: Lato;
       margin-bottom: 5.6vh;
@@ -48,6 +49,17 @@
       line-height: 1.5;
       font-size: 0.95em;
       @include body-break-word();
+    }
+
+    &__quote {
+      border-left: 4px solid #333;
+      margin-bottom: 5.6vh;
+      padding: 12px 0;
+
+      p {
+        font-style: italic;
+        margin-bottom: 0;
+      }
     }
 
     h2 {
@@ -70,7 +82,7 @@
 
       li {
         margin-bottom: 15px;
-        line-height: 1.5;     
+        line-height: 1.5;
       }
 
     }

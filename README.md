@@ -1,3 +1,6 @@
+# A Design Portfolio
+Built with React and Redux
+
 ## Categories
 
 ### Category Structure

@@ -39,6 +39,10 @@ Field | Value
 --- | ---
 `title` | string
 `body`| JSX Expression
+`imgSrc` | \*imported image
+
+\*The background image must have a 1x3 aspect ratio. If no image is
+provided, a grey background is instead used.
 
 ### Adding an image to project
 Add image file to images folder

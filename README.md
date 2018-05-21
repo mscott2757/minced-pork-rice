@@ -44,7 +44,7 @@ Field | Value
 \*The background image must have a 1x3 aspect ratio. If no image is
 provided, a grey background is instead used.
 
-### Adding an image to project
+### Adding an image
 Add image file to images folder
 
 `src/images/index.js`
@@ -74,7 +74,7 @@ export const projects = {
 }
 ```
 
-### Adding a quote to project
+### Adding a quote
 Import `Quote` component, then use in project `body` JSX as a wrapper
 for paragraphs.
 
@@ -92,6 +92,27 @@ export const projects = {
           <p>Some other text</p>
           <p>Some more text</p>
         </Quote>
+      </div>
+    )
+  }
+}
+```
+
+### Adding a video
+Import `Video` component, then use in project `body` JSX. Set `src` in component to be the video source
+
+`src/content/projects.js`
+```javascript
+import { Video } from './utils';
+
+export const projects = {
+  'dt-recruit': {
+    title: 'Redesigned Recruitment Experience',
+    body: (
+      <div>
+        <h3>Background</h3>
+        <p>Some other text</p>
+        <Video src='videoSrc' />
       </div>
     )
   }

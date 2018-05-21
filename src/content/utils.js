@@ -16,3 +16,17 @@ export const Quote = ({ children }) => {
     </div>
   );
 }
+
+export const Video = ({ src }) => {
+  return (
+    <div className='project-body__iframe-wrapper'>
+      <iframe
+        className='project-body__iframe'
+        frameborder="0"
+        allowfullscreen
+        src={src}
+      >
+      </iframe>
+    </div>
+  );
+}

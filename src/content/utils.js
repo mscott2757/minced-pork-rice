@@ -21,6 +21,7 @@ export const Video = ({ src }) => {
   return (
     <div className='project-body__iframe-wrapper'>
       <iframe
+        title={src}
         className='project-body__iframe'
         frameborder="0"
         allowfullscreen

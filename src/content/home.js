@@ -3,10 +3,12 @@ import strategy from '../images/squares/international.jpg';
 import design from '../images/design/freelance.jpg';
 import forfun from '../images/squares/banana.jpg';
 import resume from '../images/design/portfolio.jpg';
+import testHomeBanner from '../images/test-home-banner.jpg';
 
 /** 4 boxes **/
 
 export const home = {
+  imgSrc: testHomeBanner,
   categories: [
 
     /** 

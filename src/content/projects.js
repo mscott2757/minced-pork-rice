@@ -1,5 +1,6 @@
 import React from 'react';
-import { ProjectImg, Quote } from './utils';
+import { ProjectImg, Quote, Video } from './utils';
+import testBanner from '../images/test-banner.jpg';
 
 
 const exampleText1 = 'Test1 ';
@@ -232,6 +233,7 @@ export const projects = {
 
   'fishbowl': {
     title: 'Fishbowl: A short film',
+    imgSrc: 'test-banner',
     body: (
       <div>
         <h3>Background</h3>
@@ -246,9 +248,7 @@ export const projects = {
         <p>Over the course of a month of script writing, filming, and producing, we created Fish Bowl. It is a twist on the TV show Shark Tank. In this short film, we take a closer look at some of the reasons why Asian Americans are represented the way they are, and the narratives we are trying to share.</p>
 
         <h3>FINAL PRODUCT</h3>
-
-        <iframe src="https://drive.google.com/file/d/0B_zkVXFBztBBTy1sUVozWGt1Qmc/preview" width="640" height="480"></iframe>
-
+        <Video src="https://drive.google.com/file/d/0B_zkVXFBztBBTy1sUVozWGt1Qmc/preview" />
       </div>
     )
   },

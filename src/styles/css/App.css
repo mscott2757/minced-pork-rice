@@ -8,7 +8,8 @@
   height: 100vh;
   border-right: 1px solid #eee;
   background: white;
-  background: rgba(255, 255, 255, 0.3); }
+  background: rgba(255, 255, 255, 0.3);
+  z-index: 5; }
   .nav ul {
     position: absolute;
     margin-top: 120px;
@@ -57,38 +58,57 @@
 .home {
   width: 100%; }
 
-.home-banner {
+.home-banner-wrapper {
   height: 100vh;
   width: 100vw;
-  padding: 0 90px;
-  padding-top: 5vh;
-  background-color: #ddd; }
-  .home-banner .home-banner__caret {
+  background-color: #ddd;
+  position: relative;
+  overflow: hidden; }
+  .home-banner-wrapper .home-banner-img {
+    position: absolute;
     width: 100%;
-    display: flex;
-    justify-content: center; }
-    .home-banner .home-banner__caret i {
-      color: white; }
-  .home-banner .home-banner__title {
-    margin-bottom: 4.2vh; }
-    .home-banner .home-banner__title h1 {
-      color: white;
-      display: inline-block;
-      font-style: italic;
-      font-weight: bold;
-      font-size: 80px;
-      letter-spacing: 4px;
-      background-color: #a8a8a8; }
-    .home-banner .home-banner__title--name {
-      padding-left: 14vw; }
-    .home-banner .home-banner__title--design {
-      padding-left: 10vw; }
-    .home-banner .home-banner__title--creative h1, .home-banner .home-banner__title--workshops h1 {
-      text-decoration: underline; }
-    .home-banner .home-banner__title--creative {
-      padding-left: 24vw; }
-    .home-banner .home-banner__title--workshops {
-      padding-left: 29vw; }
+    height: 100%;
+    top: 0;
+    left: 0; }
+    @media only screen and (min-width: 1060px) {
+      .home-banner-wrapper .home-banner-img img {
+        width: 100%; } }
+    @media only screen and (max-width: 1060px) {
+      .home-banner-wrapper .home-banner-img img {
+        height: 100%; } }
+  .home-banner-wrapper .home-banner {
+    height: 100%;
+    width: 100%;
+    padding: 0 90px;
+    padding-top: 5vh;
+    position: relative;
+    z-index: 3; }
+    .home-banner-wrapper .home-banner .home-banner__caret {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      .home-banner-wrapper .home-banner .home-banner__caret i {
+        color: white; }
+    .home-banner-wrapper .home-banner .home-banner__title {
+      margin-bottom: 4.2vh; }
+      .home-banner-wrapper .home-banner .home-banner__title h1 {
+        color: white;
+        display: inline-block;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 80px;
+        letter-spacing: 4px;
+        background-color: #a8a8a8; }
+      .home-banner-wrapper .home-banner .home-banner__title--name {
+        padding-left: 14vw; }
+      .home-banner-wrapper .home-banner .home-banner__title--design {
+        padding-left: 10vw; }
+      .home-banner-wrapper .home-banner .home-banner__title--creative h1, .home-banner-wrapper .home-banner .home-banner__title--workshops h1 {
+        text-decoration: underline; }
+      .home-banner-wrapper .home-banner .home-banner__title--creative {
+        padding-left: 24vw; }
+      .home-banner-wrapper .home-banner .home-banner__title--workshops {
+        padding-left: 29vw; }
 
 .home-categories-container {
   height: 100vh;
@@ -139,29 +159,45 @@
   width: 100vw;
   padding-left: 90px; }
   .project .project-banner {
-    padding: 2.2vh 2.7vw;
     width: 100%;
-    height: 37vh;
+    height: 40vh;
+    min-height: 280px;
     background-color: #ddd;
-    display: flex;
-    align-items: flex-end; }
-    .project .project-banner .project-banner__title h2 {
-      color: #fff;
-      margin-right: 10px;
-      font-size: 2.5em;
-      letter-spacing: 1px;
-      text-transform: lowercase; }
-    .project .project-banner .project-banner__title .project-banner__category {
-      font-family: Lato; }
-    .project .project-banner .project-banner__title h3 {
-      color: #fff;
-      text-transform: uppercase;
-      letter-spacing: 1px; }
+    position: relative;
+    overflow: hidden; }
+    .project .project-banner .project-banner__img-wrapper {
+      height: 100%; }
+      .project .project-banner .project-banner__img-wrapper img {
+        min-height: 40vh; }
+        @media only screen and (min-width: 950px) {
+          .project .project-banner .project-banner__img-wrapper img {
+            width: 100%; } }
+        @media only screen and (max-width: 950px) {
+          .project .project-banner .project-banner__img-wrapper img {
+            height: 100%; } }
+    .project .project-banner .project-banner__title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 4;
+      padding: 2.2vh 2.7vw; }
+      .project .project-banner .project-banner__title h2 {
+        color: #fff;
+        margin-right: 10px;
+        font-size: 2.5em;
+        letter-spacing: 1px;
+        text-transform: lowercase; }
+      .project .project-banner .project-banner__title .project-banner__category {
+        font-family: Lato; }
+      .project .project-banner .project-banner__title h3 {
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1px; }
   .project .project-body {
     padding: 7.5vh 16vw; }
     .project .project-body p {
       font-family: Lato;
-      margin-bottom: 5.6vh;
+      margin-bottom: 40px;
       padding: 0 2.3vw;
       text-align: left;
       text-indent: 3vw;
@@ -173,6 +209,27 @@
       -webkit-hyphens: auto;
       -moz-hyphens: auto;
       hyphens: auto; }
+    .project .project-body__quote {
+      border-left: 4px solid #333;
+      margin-bottom: 40px;
+      padding: 12px 0; }
+      .project .project-body__quote p {
+        font-style: italic;
+        text-indent: 0; }
+        .project .project-body__quote p:last-child {
+          margin-bottom: 0; }
+    .project .project-body__iframe-wrapper {
+      position: relative;
+      width: 100%;
+      height: 0;
+      padding-bottom: 56.25%;
+      margin-bottom: 40px; }
+      .project .project-body__iframe-wrapper .project-body__iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
     .project .project-body h2 {
       font-family: Lato;
       margin-bottom: 4.6vh;

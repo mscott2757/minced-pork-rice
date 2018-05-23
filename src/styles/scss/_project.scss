@@ -70,6 +70,18 @@
       line-height: 1.5;
       font-size: 0.95em;
       @include body-break-word();
+
+      i {
+        font-style: italic;
+      }
+
+      b {
+        font-style: bold;
+      }
+
+      u {
+        text-decoration: underline;
+      }
     }
 
     &__quote {

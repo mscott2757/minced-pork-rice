@@ -1,5 +1,7 @@
 @import 'shared';
 
+$item-bottom-margin: 40px;
+
 .project {
   min-height: 100vh;
   width: 100vw;
@@ -59,19 +61,38 @@
   .project-body {
     padding: 7.5vh 16vw;
 
-    p, h4 {
-      padding: 0 2.3vw;
+    p, h2, h3, h4 {
       font-family: Lato;
-      margin-bottom: 40px;
+    }
+
+    p, h4, ul, ol {
+      padding: 0 30px;
+      margin: 0;
+      margin-bottom: $item-bottom-margin;
+      padding: 0 30px;
     }
 
     h4 {
       font-size: 1.1em;
     }
 
+    ul, ol {
+      list-style-position: inside;
+
+      li {
+        font-size: 0.95em;
+        margin-bottom: 15px;
+        line-height: 1.5;
+      }
+    }
+
+    ul {
+      li {
+        list-style-type: circle;
+      }
+    }
+
     p {
-      font-family: Lato;
-      margin-bottom: 40px;
       text-align: left;
       text-indent: 3vw;
       line-height: 1.5;
@@ -111,7 +132,7 @@
       width: 100%;
       height: 0;
       padding-bottom: 56.25%;
-      margin-bottom: 40px;
+      margin-bottom: $item-bottom-margin;
 
       .project-body__iframe {
         position: absolute;
@@ -123,19 +144,17 @@
     }
 
     h2 {
-      font-family: Lato;
       margin-bottom: 4.6vh;
       line-height: 1.5;
     }
 
     h3 {
-      font-family: Lato;
       font-style: italic;
       font-weight: normal;
       font-size: 1.5em;
       letter-spacing: 1px;
       text-transform: uppercase;
-      margin-bottom: 2.6vh;
+      margin-bottom: 20px;
       padding-top: 20px;
 
       &:first-child {
@@ -143,19 +162,10 @@
       }
     }
 
-    ol {
-
-      li {
-        margin-bottom: 15px;
-        line-height: 1.5;
-      }
-
-    }
-
     &__img {
       display: flex;
       justify-content: center;
-      margin-bottom: 2.6vh;
+      margin-bottom: $item-bottom-margin;
 
       img {
         width: 50%;

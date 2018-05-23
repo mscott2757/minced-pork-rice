@@ -7,13 +7,16 @@ import mincedPorkRice from './reducers';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
+import { ScrollToTop } from './components';
 
 const store = createStore(mincedPorkRice);
 
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <AppContainer />
+      <ScrollToTop>
+        <AppContainer />
+      </ScrollToTop>
     </BrowserRouter>
   </Provider>,
   document.getElementById('root'));

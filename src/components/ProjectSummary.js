@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 const ProjectSummary = ({ imgSrc, className = '', path, history, title, description, externalLink }) => {
   const handleClick = () => {
     if (externalLink) {
-      window.location.href = externalLink;
+      window.open(externalLink, '_blank');
     } else {
       history.push(path);
     }

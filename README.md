@@ -47,8 +47,10 @@ Field | Value
 `id` | string unique identifier
 `title` | string
 `description` | string
-`imgSrc` | imported image
+`imgSrc` | string\*
 `externalLink` | string (optional: takes precedence over internal routing link if present)
+
+\*this corresponds to the image `filename` in `images/index.js`
 
 ## Projects
 

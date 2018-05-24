@@ -1,16 +1,44 @@
 # A Design Portfolio
 Built with React and Redux
 
+### Adding images
+Add image file to images folder then update `images/index.js` with the
+new file
+
+`images/index.js`
+```javascript
+  const images = {
+    'filename': require('./filename.jpg'),
+    'filename2': require('./filename2.jpg'),
+    ...
+  }
+```
+
+### Setting the image on the home page
+Set `imgSrc` in `content/home.js` to be the filename corresponding to
+the image in `images/index.js`. The recommended aspect ratio for the
+image is 2 by 3 at the moment.
+
+`content/home.js`
+```javascript
+export const home = {
+  imgSrc: 'filename',
+  ...
+}
+```
+
 ## Categories
 
 ### Category Structure
-In `src/content/categories/` each category is a Javascript object of the form
+In `content/categories/` each category is a Javascript object of the form
 
 Field | Value
 --- | ---
-`id` | string unique identifier
 `title` | string
+`imgSrc` | string\*
 `projects` | array
+
+\*this corresponds to the image `filename` in `images/index.js`
 
 Each category has a list of projects where each project is a Javascript object of the form
 
@@ -45,16 +73,8 @@ Field | Value
 provided, a grey background is instead used.
 
 ### Adding an image
-Add image file to images folder
 
-`src/images/index.js`
-```javascript
-  const images = {
-    'filename': require('./filename.jpg'),
-    'filename2': require('./filename2.jpg'),
-  }
-```
-Import `ProjectImg` component, then use in project `body` JSX. Set `src` in component to be `filename`
+Import `ProjectImg` component, then use in project `body` JSX. Set `src` in component to be `filename` from `images/index.js`
 
 `src/content/projects.js`
 ```javascript
@@ -99,7 +119,7 @@ export const projects = {
 ```
 
 ### Adding a video
-Import `Video` component, then use in project `body` JSX. Set `src` in component to be the video source
+Import `Video` component, then use in project `body` JSX. Set `src` in component to be the URL video source
 
 `src/content/projects.js`
 ```javascript

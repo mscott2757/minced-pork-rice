@@ -1,13 +1,11 @@
-import squareImg from '../../images/test-square.jpg';
 import digital from '../../images/strategy/digital.jpg';
 import sharpie from '../../images/strategy/sharpie.jpg';
 import postit from '../../images/strategy/postit.jpg';
 import goals from '../../images/design/goals.jpg';
 
-
 export const creativeWorkshops = {
-  id: 'creative-workshops',
-  title: 'Strategy',
+  title: 'Design Strategy',
+  imgSrc: 'strategy',
   projects: [
     { imgSrc: postit,
       title: 'Redesigned recruitment experience',

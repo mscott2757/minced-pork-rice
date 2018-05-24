@@ -237,9 +237,22 @@ export const projects = {
     body: (
       <div>
         <h3>Background</h3>
-        <p>In the spring semester of my senior year, I got the opportunity to film and produce a short film that critically analyzed and reflected upon Asian/Asian American representation in media.</p>
+        <p>In the <b>spring</b> <u>semester</u> <i>of</i> my senior year, I got the opportunity to film and produce a short film that critically analyzed and reflected upon Asian/Asian American representation in media.</p>
+        <ol>
+          <li>one item</li>
+          <li>one item</li>
+        </ol>
 
-        <Quote><p>How might we ignite a conversation on the role of Asian Americans in media and the challenges each individual faces in telling their story?</p></Quote>
+        <ul>
+          <li>one item</li>
+          <li>one item</li>
+        </ul>
+
+        <Quote>
+          <h4>Withouth respect</h4>
+          <p>How might we ignite a conversation on the role of Asian Americans in media and the challenges each individual faces in telling their story?</p>
+          <p>How might we ignite a conversation on the role of Asian Americans in media and the challenges each individual faces in telling their story?</p>
+        </Quote>
 
         <h3>PROCESS</h3>
 

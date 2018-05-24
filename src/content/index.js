@@ -1,7 +1,7 @@
 import pdfSrc from './resume.pdf';
 
 export { home } from './home';
-export { categories } from './categories';
+export { categories } from './categories/';
 export { projects } from './projects';
 
 export const resume = {

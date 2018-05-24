@@ -1,5 +1,7 @@
 const images = {
   'test-square': require('./test-square.jpg'),
+  'test-banner': require('./test-banner.jpg'),
+  'test-home-banner': require('./test-home-banner.jpg'),
 
 
 /** about **/
@@ -56,6 +58,10 @@ const images = {
   'blue': require('./strategy/trends/2.jpeg'),   
   'foamboard': require('./strategy/trends/3.jpeg'),  
   'wall': require('./strategy/trends/4.JPG'),    
+
+  'strategy': require('./squares/international.jpg'),
+  'design': require('./design/freelance.jpg'),
+  'for-fun': require('./squares/banana.jpg')
 }
 
 export default images;

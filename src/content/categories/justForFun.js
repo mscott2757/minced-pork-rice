@@ -1,15 +1,11 @@
-import squareImg from '../../images/test-square.jpg';
 import fishLogo from '../../images/fun/fishbowl/1.gif'
 import travel from '../../images/fun/travel.jpg'
 import medium from '../../images/fun/medium.jpg'
 import weekend from '../../images/fun/wkndst.jpg'
 
-
-const exampleDescription = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in metus arcu. Vivamus eget efficitur ante, quis tempus leo. Nunc vitae ante porta, congue nibh ut, mollis tellus. Donec in nisl id tellus aliquet feugiat eget quis lacus. Maecenas ut tortor quam.';
-
 export const justForFun = {
-  id: 'just-for-fun',
-  title: 'just for fun',
+  title: 'Just For Fun',
+  imgSrc: 'for-fun',
   projects: [
     {
       imgSrc: fishLogo,

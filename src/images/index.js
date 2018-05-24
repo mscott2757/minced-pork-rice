@@ -1,13 +1,30 @@
 const images = {
+  /* test images */
   'test-square': require('./test-square.jpg'),
   'test-banner': require('./test-banner.jpg'),
   'test-home-banner': require('./test-home-banner.jpg'),
 
+  /* just for fun */
+  'fish-logo': require('./fun/fishbowl/1.gif'),
+  'travel': require('./fun/travel.jpg'),
+  'medium':  require('./fun/medium.jpg'),
+  'weekend': require('./fun/wkndst.jpg'),
 
-/** about **/
+  /* design projects */
+  'freelance': require('./design/freelance.jpg'),
+  'portfolio': require('./design/portfolio.jpg'),
+
+  /* creative workshops */
+  'digital': require('./strategy/digital.jpg'),
+  'sharpie': require('./strategy/sharpie.jpg'),
+  'postit':  require('./strategy/postit.jpg'),
+  'goals':   require('./design/goals.jpg'),
+
+
+  /* about */
   'me': require('./square2.jpg'),
 
-/** #goals **/
+  /* #goals */
   'youngppl': require('./design/goals/0.jpg'),
   'personas': require('./design/goals/1.jpg'),
   'matrix': require('./design/goals/2.jpg'),
@@ -17,7 +34,7 @@ const images = {
   'desk': require('./design/goals/6.jpg'),
 
 
-/**freelance**/
+  /* freelance */
   'f1': require('./design/freelance/1.jpg'),
   'f3': require('./design/freelance/3.jpg'),
   'f4': require('./design/freelance/4.jpg'),
@@ -32,28 +49,24 @@ const images = {
   'f13': require('./design/freelance/13.jpg'),  
   'f14': require('./design/freelance/14.jpg'), 
 
-/** portfolio **/
+  /* portfolio */
   'web': require('./design/portfolio/1.JPG'),
   'mobile': require('./design/portfolio/2.JPG'),  
 
-/** dt adient**/
-
+  /* dt adient */
   'fastcar': require('./strategy/dt-adient/1.png'),  
   'dt': require('./strategy/dt-adient/2.png'), 
   'poker': require('./strategy/dt-adient/3.png'), 
   'empathy': require('./strategy/dt-recruit/6.png'),  
 
-
-/** dt recruit**/
-
+  /* dt recruit */
   'affinity': require('./strategy/dt-recruit/1.jpg'), 
   'marsh1': require('./strategy/dt-recruit/2.jpg'),   
   'marsh2': require('./strategy/dt-recruit/3.jpg'),
   'thinking': require('./strategy/dt-recruit/4.jpg'),  
   'fb': require('./strategy/dt-recruit/5.png'),      
 
-/** trends **/
-
+  /* trends */
   'molly': require('./strategy/trends/1.jpeg'), 
   'blue': require('./strategy/trends/2.jpeg'),   
   'foamboard': require('./strategy/trends/3.jpeg'),  

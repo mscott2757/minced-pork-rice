@@ -1,4 +1,5 @@
 import React from 'react';
+import images from '../images';
 
 export const NavIconLink = ({ icon, path }) => {
   return (
@@ -16,4 +17,11 @@ export const HomeBannerTitle = ({ title, type }) => {
       <h1>{title}</h1>
     </div>
   );
+}
+
+export function getImage(imgSrc) {
+  if (!(imgSrc in images)) {
+    throw new Error(`Image '${imgSrc}' not found in images/index.js`);
+  }
+  return images[imgSrc];
 }

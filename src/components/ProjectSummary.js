@@ -1,5 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
+import { getImage } from './utils';
 
 const ProjectSummary = ({ imgSrc, className = '', path, history, title, description, externalLink }) => {
   const handleClick = () => {
@@ -13,7 +14,7 @@ const ProjectSummary = ({ imgSrc, className = '', path, history, title, descript
   return (
     <div className='project-summary' onClick={handleClick}>
       <div className='project-summary__thumb'>
-        <img src={imgSrc} alt='' />
+        <img src={getImage(imgSrc)} alt='' />
       </div>
       <div className='project-summary__body'>
         <h3>{title}</h3>

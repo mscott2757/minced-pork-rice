@@ -1,13 +1,13 @@
 import React from 'react';
 import { HomeBannerTitle } from './utils';
-import images from '../images';
+import { getImage } from './utils';
 
 const HomeBanner = ({ handleScroll, titles, imgSrc }) => {
   let homeBannerImg = null;
   if (imgSrc) {
     homeBannerImg = (
       <div className='home-banner-img'>
-        <img src={images[imgSrc]} alt='' />
+        <img src={getImage(imgSrc)} alt='' />
       </div>
     )
   }

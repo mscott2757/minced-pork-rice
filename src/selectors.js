@@ -1,6 +1,13 @@
 
-export function getCategory({ categories }, id) {
-  return { id, ...categories[id] }
+export function getCategory({ categories, projects }, id) {
+  let category = categories[id];
+  return {
+    id,
+    ...category,
+    projects: category.projects.map((project) => {
+      return { id: project, ...projects[project] }
+    })
+  }
 }
 
 export function getProject({ projects }, id) {

@@ -2,7 +2,7 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 import { getImage } from './utils';
 
-const ProjectSummary = ({ imgSrc, className = '', path, history, title, description, externalLink }) => {
+const ProjectSummary = ({ thumbImg, className = '', path, history, title, description, externalLink }) => {
   const handleClick = () => {
     if (externalLink) {
       window.open(externalLink, '_blank');
@@ -11,10 +11,12 @@ const ProjectSummary = ({ imgSrc, className = '', path, history, title, descript
     }
   }
 
+  console.log(path);
+
   return (
     <div className='project-summary' onClick={handleClick}>
       <div className='project-summary__thumb'>
-        <img src={getImage(imgSrc)} alt='' />
+        <img src={getImage(thumbImg)} alt='' />
       </div>
       <div className='project-summary__body'>
         <h3>{title}</h3>

@@ -1,19 +1,19 @@
 import React from 'react';
-import images from '../images';
+import { getImage } from './utils';
 
-const Project = ({ title, imgSrc, body, category }) => {
-  let bannerImg = null;
-  if (imgSrc) {
-    bannerImg = (
+const Project = ({ title, bannerImg, body, category }) => {
+  let banner = null;
+  if (bannerImg) {
+    banner = (
       <div className='project-banner__img-wrapper'>
-        <img src={images[imgSrc]} alt='' />
+        <img src={getImage(bannerImg)} alt='' />
       </div>
     );
   }
   return (
     <div className='project'>
       <div className='project-banner'>
-        {bannerImg}
+        {banner}
         <div className='project-banner__title'>
           <a href={`/${category.id}`}>
             <h3 className='project-banner__category'>{category.title}</h3>

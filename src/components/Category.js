@@ -9,7 +9,8 @@ class Category extends Component {
   getPath = (project) => `/${this.props.id}/${project.id}`;
 
   render() {
-    const { title, projects } = this.props;
+    const { title, projects, testProjects } = this.props;
+    console.log(testProjects);
     return (
       <div className='category'>
         <div className='category__title'>

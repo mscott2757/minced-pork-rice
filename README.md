@@ -40,22 +40,13 @@ Field | Value
 
 \*this corresponds to the image `filename` in `images/index.js`
 
-Each category has a list of projects where each project is a Javascript object of the form
-
-Field | Value
---- | ---
-`id` | string unique identifier
-`title` | string
-`description` | string
-`imgSrc` | string\*
-`externalLink` | string (optional: takes precedence over internal routing link if present)
-
-\*this corresponds to the image `filename` in `images/index.js`
+Each category has a list of project IDs which correspond to the keys in
+`content/projects/index.js`.
 
 ## Projects
 
 ### Project Structure
-In `src/content/projects.js`, `projects` is a Javascript object of the form
+In `content/projects/index.js`, `projects` is a Javascript object of the form
 
 Field | Value
 --- | ---
@@ -68,10 +59,15 @@ Each project is a Javascript object of the form
 Field | Value
 --- | ---
 `title` | string
+`externalLink` | string (optional: takes precedence over internal routing link if present)
+`description` | string
 `body`| JSX Expression
-`imgSrc` | \*imported image
+`bannerImg` | string\*
+`thumbImg` | string\*
 
-\*The background image must have a 1x3 aspect ratio. If no image is
+\*this corresponds to the image `filename` in `images/index.js`
+
+The banner image must have a 1x3 aspect ratio. If no image is
 provided, a grey background is instead used.
 
 ### Adding an image

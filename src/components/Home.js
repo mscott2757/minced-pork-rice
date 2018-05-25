@@ -27,10 +27,10 @@ class Home extends Component {
   }
 
   render() {
-    const { categories, titles, imgSrc } = this.props;
+    const { categories, titles, bannerImg } = this.props;
     return (
       <div className='home'>
-        <HomeBanner titles={titles} handleScroll={this.scrollToProjects} imgSrc={imgSrc} />
+        <HomeBanner titles={titles} handleScroll={this.scrollToProjects} bannerImg={bannerImg} />
         <HomeCategories categories={categories} />
       </div>
     );

@@ -11,8 +11,6 @@ const ProjectSummary = ({ thumbImg, className = '', path, history, title, descri
     }
   }
 
-  console.log(path);
-
   return (
     <div className='project-summary' onClick={handleClick}>
       <div className='project-summary__thumb'>

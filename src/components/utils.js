@@ -19,9 +19,13 @@ export const HomeBannerTitle = ({ title, type }) => {
   );
 }
 
-export function getImageSrc(image) {
+export const Image = ({ src: image, className }) => {
   if (!(image in images)) {
     throw new Error(`Image '${image}' not found in images/index.js`);
   }
-  return images[image];
+  return (
+    <div className={className} >
+      <img src={images[image]} alt='' />
+    </div>
+  );
 }

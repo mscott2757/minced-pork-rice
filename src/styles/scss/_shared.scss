@@ -55,12 +55,16 @@
       cursor: pointer;
     }
 
-    img {
+    &__thumb {
       width: 100%;
       margin-bottom: 3vh;
+
+      img {
+        width: 100%;
+      }
     }
 
-    .panel__title {
+    &__title {
       text-align: center;
 
       h3 {

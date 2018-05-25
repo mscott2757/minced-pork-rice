@@ -1,6 +1,6 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom'
-import { getImageSrc } from './utils';
+import { Image } from './utils';
 
 const Panel = ({ thumbImg, title, className, path, history }) => {
   const handleClick = () => {
@@ -9,7 +9,7 @@ const Panel = ({ thumbImg, title, className, path, history }) => {
 
   return (
     <div className={`panel ${className}`} onClick={handleClick}>
-      <img src={getImageSrc(thumbImg)} alt='' />
+      <Image className='panel__thumb' src={thumbImg} />
       <div className='panel__title'>
         <h3>{ title }</h3>
       </div>

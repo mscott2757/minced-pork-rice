@@ -15,14 +15,14 @@ new file
 ```
 
 ### Setting the image on the home page
-Set `imgSrc` in `content/home.js` to be the filename corresponding to
+Set `bannerImg` in `content/home.js` to be the filename corresponding to
 the image in `images/index.js`. The recommended aspect ratio for the
 image is 2 by 3 at the moment.
 
 `content/home.js`
 ```javascript
 export const home = {
-  imgSrc: 'filename',
+  bannerImg: 'filename',
   ...
 }
 ```
@@ -35,7 +35,7 @@ In `content/categories/` each category is a Javascript object of the form
 Field | Value
 --- | ---
 `title` | string
-`imgSrc` | string\*
+`thumbImg` | string\*
 `projects` | array
 
 \*this corresponds to the image `filename` in `images/index.js`

@@ -19,9 +19,9 @@ export const HomeBannerTitle = ({ title, type }) => {
   );
 }
 
-export function getImage(imgSrc) {
-  if (!(imgSrc in images)) {
-    throw new Error(`Image '${imgSrc}' not found in images/index.js`);
+export function getImageSrc(image) {
+  if (!(image in images)) {
+    throw new Error(`Image '${image}' not found in images/index.js`);
   }
-  return images[imgSrc];
+  return images[image];
 }

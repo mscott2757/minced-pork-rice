@@ -1,7 +1,7 @@
 
 export const designProjects = {
   title: 'Visual Design',
-  imgSrc: 'design',
+  thumbImg: 'design',
   projects: [
     'freelance',
     'portfolio'

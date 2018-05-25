@@ -1,20 +1,20 @@
 import React from 'react';
 import { HomeBannerTitle } from './utils';
-import { getImage } from './utils';
+import { getImageSrc } from './utils';
 
-const HomeBanner = ({ handleScroll, titles, imgSrc }) => {
-  let homeBannerImg = null;
-  if (imgSrc) {
-    homeBannerImg = (
+const HomeBanner = ({ handleScroll, titles, bannerImg }) => {
+  let homeBanner = null;
+  if (bannerImg) {
+    homeBanner = (
       <div className='home-banner-img'>
-        <img src={getImage(imgSrc)} alt='' />
+        <img src={getImageSrc(bannerImg)} alt='' />
       </div>
     )
   }
 
   return (
     <div className='home-banner-wrapper'>
-      {homeBannerImg}
+      {homeBanner}
       <div className='home-banner'>
         {titles.map((titleProps, index) => <HomeBannerTitle {...titleProps} key={index} />)}
         <div className='home-banner__caret'>

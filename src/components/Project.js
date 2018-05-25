@@ -1,12 +1,12 @@
 import React from 'react';
-import { getImage } from './utils';
+import { getImageSrc } from './utils';
 
 const Project = ({ title, bannerImg, body, category }) => {
   let banner = null;
   if (bannerImg) {
     banner = (
       <div className='project-banner__img-wrapper'>
-        <img src={getImage(bannerImg)} alt='' />
+        <img src={getImageSrc(bannerImg)} alt='' />
       </div>
     );
   }

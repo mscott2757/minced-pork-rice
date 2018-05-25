@@ -1,7 +1,7 @@
 
 export const justForFun = {
   title: 'Just For Fun',
-  imgSrc: 'for-fun',
+  thumbImg: 'for-fun',
   projects: [
     'fishbowl',
     'weekend-state',

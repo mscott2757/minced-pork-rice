@@ -1,7 +1,7 @@
 
 export const creativeWorkshops = {
   title: 'Design Strategy',
-  imgSrc: 'strategy',
+  thumbImg: 'strategy',
   projects: [
     'dt-recruit',
     'trends',

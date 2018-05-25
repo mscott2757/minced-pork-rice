@@ -1,6 +1,6 @@
 
 export const home = {
-  imgSrc: 'test-home-banner',
+  bannerImg: 'test-home-banner',
   titles: [
     { title: "I'm Waverly", type: 'name' },
     { title: "& I design", type: 'design' },

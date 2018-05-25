@@ -27,9 +27,31 @@ export const home = {
 }
 ```
 
+## About
+In `content/about.js` the About page content is a Javascript object of
+the form
+
+Field | Value
+--- | ---
+`title` | string
+`profileImg` | string\*
+`body` | JSX expression
+
+\*this corresponds to the image `filename` in `images/index.js`
+
+Image should have a square aspect ratio.
+
 ## Categories
 
 ### Category Structure
+In `content/categories/index.js`, `categories` is a Javascript object of the form
+
+Field | Value
+--- | ---
+`[categoryId]` | `category`
+`[categoryId2]` | `category2`
+`[...]` | `...`
+
 In `content/categories/` each category is a Javascript object of the form
 
 Field | Value
@@ -54,7 +76,7 @@ Field | Value
 `[projectId2]` | `project2`
 `[...]` | `...`
 
-Each project is a Javascript object of the form
+Each project in `content/projects/` is a Javascript object of the form
 
 Field | Value
 --- | ---
@@ -79,12 +101,11 @@ Import `ProjectImg` component, then use in project `body` JSX. Set `src` in comp
 import { ProjectImg } from './utils';
 
 export const projects = {
-  'dt-recruit': {
-    title: 'Redesigned Recruitment Experience',
+  'project': {
+    ...
     body: (
       <div>
-        <h3>Background</h3>
-        <p>Some other text</p>
+        <h3>some text</h3>
         <ProjectImg src='filename' />
       </div>
     )
@@ -101,11 +122,11 @@ for paragraphs.
 import { ProjectImg } from './utils';
 
 export const projects = {
-  'dt-recruit': {
-    title: 'Redesigned Recruitment Experience',
+  'project': {
+    ...
     body: (
       <div>
-        <h3>Background</h3>
+        <h3>some text</h3>
         <Quote>
           <p>Some other text</p>
           <p>Some more text</p>
@@ -124,12 +145,11 @@ Import `Video` component, then use in project `body` JSX. Set `src` in component
 import { Video } from './utils';
 
 export const projects = {
-  'dt-recruit': {
-    title: 'Redesigned Recruitment Experience',
+  'project': {
+    ...
     body: (
       <div>
-        <h3>Background</h3>
-        <p>Some other text</p>
+        <h3>some text</h3>
         <Video src='videoSrc' />
       </div>
     )

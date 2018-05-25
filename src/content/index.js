@@ -1,6 +1,7 @@
 import pdfSrc from './resume.pdf';
 
 export { home } from './home';
+export { about } from './about';
 export { categories } from './categories/';
 export { projects } from './projects/';
 

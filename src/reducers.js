@@ -1,4 +1,4 @@
-import { home, categories, projects, nav, resume } from './content/';
+import { home, categories, projects, nav, resume, about } from './content/';
 import { TOGGLE_RESUME } from './actions';
 
 const mincedPorkRice = (state = {
@@ -6,6 +6,7 @@ const mincedPorkRice = (state = {
   categories,
   projects,
   nav,
+  about,
   resume: {
     visible: false,
     ...resume

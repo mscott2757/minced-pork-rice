@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Category from '../components/Category';
+import { Category } from '../components/';
 import { getCategory } from '../selectors';
 
 const mapStateToProps = (state, { match: { params } }) => {

@@ -61,7 +61,7 @@ $item-bottom-margin: 40px;
   .project-body {
     padding: 7.5vh 16vw;
 
-    p, h2, h3, h4 {
+    h2, h4 {
       font-family: Lato;
     }
 
@@ -93,23 +93,10 @@ $item-bottom-margin: 40px;
     }
 
     p {
+      @include body-text-normal();
+      @include body-break-word();
       text-align: left;
       text-indent: 3vw;
-      line-height: 1.5;
-      font-size: 0.95em;
-      @include body-break-word();
-
-      i {
-        font-style: italic;
-      }
-
-      b {
-        font-style: bold;
-      }
-
-      u {
-        text-decoration: underline;
-      }
     }
 
     &__quote {
@@ -149,10 +136,7 @@ $item-bottom-margin: 40px;
     }
 
     h3 {
-      font-style: italic;
-      font-weight: normal;
-      font-size: 1.5em;
-      letter-spacing: 1px;
+      @include body-text-lg();
       text-transform: uppercase;
       margin-bottom: 20px;
       padding-top: 20px;

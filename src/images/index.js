@@ -3,6 +3,7 @@ const images = {
   'test-square': require('./test-square.jpg'),
   'test-banner': require('./test-banner.jpg'),
   'test-home-banner': require('./test-home-banner.jpg'),
+  'test-profile': require('./test-profile.jpg'),
 
   /* just for fun */
   'fish-logo': require('./fun/fishbowl/1.gif'),

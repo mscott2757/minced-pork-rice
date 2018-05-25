@@ -1,3 +1,35 @@
+@mixin body-text-normal() {
+  font-family: Lato;
+  font-size: 0.95em;
+  line-height: 1.5;
+
+  i {
+    font-style: italic;
+  }
+
+  b {
+    font-style: bold;
+  }
+
+  u {
+    text-decoration: underline;
+  }
+}
+
+@mixin body-text-lg() {
+  font-family: Lato;
+  line-height: 1.5;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+@mixin page-headline() {
+  font-size: 3.5em;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
 @mixin body-break-word() {
 	-ms-word-break: break-all;
 	word-break: break-all;

@@ -1,10 +1,13 @@
 import React from 'react';
 import images from '../images';
 
-export const ProjectImg = ({ src }) => {
+export const ProjectImg = ({ src: image }) => {
+  if (!(image in images)) {
+    throw new Error(`Image '${image}' not found in images/index.js`);
+  }
   return (
     <div className='project-body__img'>
-      <img src={images[src]} alt=''/>
+      <img src={images[image]} alt=''/>
     </div>
   );
 }

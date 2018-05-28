@@ -1,15 +1,11 @@
-import { home, categories, projects, nav, resume, about } from './content/';
+import content from './content/';
 import { TOGGLE_RESUME } from './actions';
 
 const mincedPorkRice = (state = {
-  home,
-  categories,
-  projects,
-  nav,
-  about,
+  ...content,
   resume: {
     visible: false,
-    ...resume
+    ...content.resume
   }
 }, action) => {
   switch (action.type) {

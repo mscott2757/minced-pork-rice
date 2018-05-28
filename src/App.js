@@ -1,5 +1,4 @@
 import React from 'react';
-import './styles/css/App.css';
 import { Nav, Projects } from './components';
 import {
   CategoryContainer,

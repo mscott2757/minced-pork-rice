@@ -74,6 +74,10 @@ $item-bottom-margin: 40px;
 
     h4 {
       font-size: 1.1em;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
 
     ul, ol {

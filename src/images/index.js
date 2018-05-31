@@ -59,8 +59,8 @@ const images = {
   'f14': require('./design/freelance/14.jpg'), 
 
   /* portfolio */
-  'web': require('./design/portfolio/1.JPG'),
-  'mobile': require('./design/portfolio/2.JPG'),  
+  'web': require('./design/portfolio/1.jpg'),
+  'mobile': require('./design/portfolio/2.jpg'),  
 
   /* dt adient */
   'fastcar': require('./strategy/dt-adient/1.png'),  
@@ -81,7 +81,7 @@ const images = {
   'molly': require('./strategy/trends/1.jpeg'), 
   'blue': require('./strategy/trends/2.jpeg'),   
   'foamboard': require('./strategy/trends/3.jpeg'),  
-  'wall': require('./strategy/trends/4.JPG'),    
+  'wall': require('./strategy/trends/4.jpg'),    
 
   'strategy': require('./squares/international.jpg'),
   'design': require('./design/freelance.jpg'),

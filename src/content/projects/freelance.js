@@ -5,6 +5,7 @@ export const freelance = {
   thumbImg: 'freelance',
   description: 'I have been designing digital assets and curating content for local businesses, Fortune 500 corporations, and student orgs to foster collaboration and build up communities in an aesthetically pleasing way.',
   title: 'Freelance',
+  bannerImg: 'jpdispo',  
   body: (
     <div>
       <h3>Local Organizations</h3>

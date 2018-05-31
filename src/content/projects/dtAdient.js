@@ -5,6 +5,7 @@ export const dtAdient = {
   thumbImg: 'digital',
   description: 'How might we create an innovative experience that can transform the culture, strategy, and priorities of a global automobile company from the inside out?',
   title: 'Digital Transformation Roadmap',
+  bannerImg: 'road',  
   body: (
     <div>
       <h3>Background</h3>
@@ -12,8 +13,8 @@ export const dtAdient = {
 
       <ProjectImg src='dt'/>
 
-      <Quote><p>How might we create an innovative experience that can transform the culture, strategy, and priorities of a global automobile company from the inside out?
-      </p></Quote>
+      <Quote><h4>How might we create an innovative experience that can transform the culture, strategy, and priorities of a global automobile company from the inside out?
+      </h4></Quote>
 
 
       <h3>Process</h3>

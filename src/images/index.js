@@ -1,4 +1,7 @@
 const images = {
+  /* home page images */
+  'home': require('./watermelon.jpg'),
+
   /* test images */
   'test-square': require('./test-square.jpg'),
   'test-banner': require('./test-banner.jpg'),
@@ -10,10 +13,13 @@ const images = {
   'travel': require('./fun/travel.jpg'),
   'medium':  require('./fun/medium.jpg'),
   'weekend': require('./fun/wkndst.jpg'),
+  'brighton': require('./fun/fishbowl/banner.jpg'),
 
   /* design projects */
   'freelance': require('./design/freelance.jpg'),
+  'jpdispo': require('./design/freelance/banner.jpg'),
   'portfolio': require('./design/portfolio.jpg'),
+  'bwflowers': require('./design/portfolio/banner.jpg'),
 
   /* creative workshops */
   'digital': require('./strategy/digital.jpg'),
@@ -33,10 +39,12 @@ const images = {
   'wire2': require('./design/goals/4.jpg'),
   'journal': require('./design/goals/5.jpg'),  
   'desk': require('./design/goals/6.jpg'),
+  'steps': require('./design/goals/banner.jpg'),
 
 
   /* freelance */
   'f1': require('./design/freelance/1.jpg'),
+  'f2': require('./design/freelance/2.jpg'),
   'f3': require('./design/freelance/3.jpg'),
   'f4': require('./design/freelance/4.jpg'),
   'f5': require('./design/freelance/5.jpg'),
@@ -59,6 +67,7 @@ const images = {
   'dt': require('./strategy/dt-adient/2.png'), 
   'poker': require('./strategy/dt-adient/3.png'), 
   'empathy': require('./strategy/dt-recruit/6.png'),  
+  'road': require('./strategy/dt-adient/banner.jpg'),  
 
   /* dt recruit */
   'affinity': require('./strategy/dt-recruit/1.jpg'), 
@@ -66,6 +75,7 @@ const images = {
   'marsh2': require('./strategy/dt-recruit/3.jpg'),
   'thinking': require('./strategy/dt-recruit/4.jpg'),  
   'fb': require('./strategy/dt-recruit/5.png'),      
+  'mustard': require('./strategy/dt-recruit/banner.jpg'),      
 
   /* trends */
   'molly': require('./strategy/trends/1.jpeg'), 

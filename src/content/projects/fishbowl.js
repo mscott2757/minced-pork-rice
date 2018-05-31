@@ -5,25 +5,15 @@ export const fishbowl = {
   thumbImg: 'fish-logo',
   description: 'In this short film, we take a closer look at some of the reasons why Asian Americans are represented the way they are, and the narratives we are trying to share.',
   title: 'Fishbowl: A short film',
-  bannerImg: 'test-banner',
+  bannerImg: 'brighton',
   body: (
     <div>
       <h3>Background</h3>
-      <p>In the <b>spring</b> <u>semester</u> <i>of</i> my senior year, I got the opportunity to film and produce a short film that critically analyzed and reflected upon Asian/Asian American representation in media.</p>
-      <ol>
-        <li>one item</li>
-        <li>one item</li>
-      </ol>
+      <p>In the spring semester of my senior year, I got the opportunity to film and produce a short film that critically analyzed and reflected upon Asian/Asian American representation in media.</p>
 
-      <ul>
-        <li>one item</li>
-        <li>one item</li>
-      </ul>
 
       <Quote>
-        <h4>Withouth respect</h4>
-        <p>How might we ignite a conversation on the role of Asian Americans in media and the challenges each individual faces in telling their story?</p>
-        <p>How might we ignite a conversation on the role of Asian Americans in media and the challenges each individual faces in telling their story?</p>
+        <h4>How might we ignite a conversation on the role of Asian Americans in media and the challenges each individual faces in telling their story?</h4>
       </Quote>
 
       <h3>PROCESS</h3>

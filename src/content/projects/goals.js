@@ -5,6 +5,7 @@ export const goals = {
   thumbImg: 'goals',
   description: "Financial planning can be intimidating for students and young professionals. We wanted to design a platform that would make it more approachable and accessible.",
   title: '#Goals: A smarter way to plan finances',
+  bannerImg: 'steps',  
   body: (
     <div>
       <h3>Background</h3>

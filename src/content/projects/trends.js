@@ -5,14 +5,14 @@ export const trends = {
   thumbImg: 'sharpie',
   description: 'We took an idea and turned it into a series of trend briefings and workshops. This specifically talks about our process for a digital onboarding workshop.',
   title: 'Trend Research',
+  bannerImg: 'test-banner',  
   body: (
     <div>
     <h3>Background</h3>
     <p>We partnered with internal digital and innovation groups to host an in-person and virtual workshop with 20+ participants, centered around a simple question within the context of the financial industry. </p>
 
-    <Quote><p>
-    How might we best inspire our customers to fall in love with our digital channels?
-    </p></Quote>
+    <Quote>
+    <h4>How might we best inspire our customers to fall in love with our digital channels?</h4></Quote>
 
     <ProjectImg src='molly'/>
 

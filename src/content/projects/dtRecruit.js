@@ -5,12 +5,13 @@ export const dtRecruit = {
   thumbImg: 'postit',
   description: 'How might we engage students in a recruiting experience that builds up their confidence and also gives us an opportunity to build a relationship before they ever set foot in the company? ',
   title: 'Redesigned Recruitment Experience',
+  bannerImg: 'mustard',    
   body: (
     <div>
       <h3>Background</h3>
       <p>Hunting for a new job right out of college can be a scary process. We set out to design an experience that would alleviate some of those fears while building upon relevant skills students would need in the workplace.</p>
 
-      <Quote><p>How might we engage students in a recruiting experience that builds up their confidence and also gives us an opportunity to build a relationship before they ever set foot in the company?</p></Quote>
+      <Quote><h4>How might we engage students in a recruiting experience that builds up their confidence and also gives us an opportunity to build a relationship before they ever set foot in the company?</h4></Quote>
 
       <h3>Process</h3>
       <p>We first reached out to student organizations at UC Berkeley and SJSU through our alumni network and identified groups to partner with. We then engaged the student leaders at each campus with a mini Design Thinking session to better understand their anxieties, concerns, career dreams, and long-term goals.</p>

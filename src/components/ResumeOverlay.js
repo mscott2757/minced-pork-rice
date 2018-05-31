@@ -38,9 +38,6 @@ class ResumeOverlay extends Component {
         <div className='resume-overlay__close' onClick={this.handleToggleResume}>
           <i className={`fa fa-times fa-sm`}></i>
         </div>
-        <div className='resume-overlay__download'>
-          <a href={downloadURL}>download</a>
-        </div>
       </div>
     );
   }

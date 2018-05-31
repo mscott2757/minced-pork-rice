@@ -4,7 +4,7 @@ import images from '../images';
 export const NavIconLink = ({ icon, path }) => {
   return (
     <div className='nav__icon-container'>
-      <a href={path}>
+      <a target='_blank' href={path}>
         <i className={`fa fa-${icon} fa-lg`}></i>
       </a>
     </div>

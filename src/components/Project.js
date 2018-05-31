@@ -11,10 +11,14 @@ const Project = ({ title, bannerImg, body, category }) => {
       <div className='project-banner'>
         {banner}
         <div className='project-banner__title'>
-          <a href={`/${category.id}`}>
-            <h3 className='project-banner__category'>{category.title}</h3>
-          </a>
-          <h2>{title}</h2>
+          <div className='project-banner__category'>
+            <a href={`/${category.id}`}>
+              <h3>{category.title}</h3>
+            </a>
+          </div>
+          <div className='project-banner__name'>
+            <h2>{title}</h2>
+          </div>
         </div>
       </div>
       <div className='project-body'>

@@ -6,7 +6,7 @@ import { toggleResume } from '../actions';
 const mapStateToProps = ({ resume, nav }) => {
   return {
     resumeVisible: resume.visible,
-    navProps: nav
+    nav
   }
 }
 

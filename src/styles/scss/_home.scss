@@ -86,12 +86,12 @@
   }
 }
 
-.home-categories-container {
+.categories {
   height: 100vh;
   width: 100vw;
   padding-left: 90px;
 
-  .home-categories__title {
+  &__title {
     padding: 12vh 10vw 0 5.5vw;
     display: flex;
     flex-direction: row;
@@ -100,17 +100,17 @@
       @include page-headline();
     }
 
-    .home-categories__title-blank {
+    &--blank {
       border-bottom: 3px solid #333;
       flex: 1;
     }
   }
 
-  .home-categories {
+  &__body {
     padding: 8.5vh 9.3vw;
     padding-bottom: 0;
 
-    .home-category {
+    .category {
       width: 33.3%;
 
     }

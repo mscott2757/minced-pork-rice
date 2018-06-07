@@ -3,8 +3,10 @@ import Home from '../components/Home';
 import { getCategories } from '../selectors';
 
 const mapStateToProps = (state, ownProps) => {
+  const { home, about } = state;
   return {
-    ...state.home,
+    home,
+    about,
     categories: getCategories(state),
     ...ownProps
   }

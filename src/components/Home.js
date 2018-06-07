@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { scroller } from 'react-scroll';
 import HomeBanner from './HomeBanner';
-import HomeCategories from './HomeCategories';
+import Categories from './Categories';
+import About from './About';
 
 class Home extends Component {
   componentDidMount() {
-    if (this.props.projects) {
-      this.initProjects();
+    if (this.props.section) {
+      this.scrollToSection(this.props.section);
     }
   }
 
@@ -18,20 +19,22 @@ class Home extends Component {
 		})
   }
 
-  initProjects = () => {
-		scroller.scrollTo('homeCategories', {
+  scrollToSection = (section) => {
+		scroller.scrollTo(section, {
 			duration: 0,
 			delay: 0,
 			smooth: false,
 		})
+
   }
 
   render() {
-    const { categories, titles, bannerImg } = this.props;
+    const { about, categories, home } = this.props;
     return (
       <div className='home'>
-        <HomeBanner {...{ titles, bannerImg }} handleScroll={this.scrollToProjects} />
-        <HomeCategories categories={categories} />
+        <HomeBanner {...home} handleScroll={this.scrollToProjects} />
+        <Categories categories={categories} />
+        <About {...about} />
       </div>
     );
   }

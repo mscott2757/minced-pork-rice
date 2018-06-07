@@ -1,17 +1,10 @@
 import React from 'react';
 import { NavIconLink } from './utils';
 
-const Nav = ({ handleToggleResume, icons, links }) => {
-  const toggleResume = (e) => {
-    e.preventDefault();
-    handleToggleResume();
-  }
+const Nav = ({ icons, links }) => {
   return (
     <div className='nav'>
       <ul>
-        <li>
-          <a onClick={toggleResume} href='/toggle-resume' className='nav__link'>resume</a>
-        </li>
         {links.map(({className, path, text }) => {
           return (
             <li key={text}>

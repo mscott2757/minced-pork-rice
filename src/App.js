@@ -8,10 +8,10 @@ import {
 } from './containers/';
 import { Route, Switch } from 'react-router-dom';
 
-const App = ({ resumeVisible, handleToggleResume, nav }) => {
+const App = ({ resumeVisible, nav }) => {
   return (
     <div className={"App " + (resumeVisible ? 'App--no-scroll' : '')}>
-      <Nav {...nav} handleToggleResume={handleToggleResume} />
+      <Nav {...nav} />
       <Switch>
         <Route exact path="/" component={HomeContainer} />
         <Route exact path="/projects" component={ScrollToCategories} />

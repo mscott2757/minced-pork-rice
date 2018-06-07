@@ -29,12 +29,12 @@ class Home extends Component {
   }
 
   render() {
-    const { about, categories, home } = this.props;
+    const { about, categories, home, toggleResume } = this.props;
     return (
       <div className='home'>
         <HomeBanner {...home} handleScroll={this.scrollToProjects} />
         <Categories categories={categories} />
-        <About {...about} />
+        <About {...about} toggleResume={toggleResume} />
       </div>
     );
   }

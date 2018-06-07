@@ -1,0 +1,33 @@
+@import 'shared';
+
+.categories {
+  height: 100vh;
+  width: 100vw;
+  padding-left: 90px;
+
+  &__title {
+    @include page-headline-padding();
+    padding-right: 128px;
+    display: flex;
+    flex-direction: row;
+
+    h2 {
+      @include page-headline();
+    }
+
+    &--blank {
+      border-bottom: 3px solid #333;
+      flex: 1;
+    }
+  }
+
+  &__body {
+    padding: 8.5vh 9.3vw;
+    padding-bottom: 0;
+
+    .category {
+      width: 33.3%;
+
+    }
+  }
+}

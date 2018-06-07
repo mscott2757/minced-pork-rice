@@ -1,11 +1,12 @@
+@import 'shared';
+
 .category {
   height: 100vh;
   width: 100vw;
   padding-left: 90px;
 
   .category__title {
-    padding: 12vh 5.5vw;
-    padding-bottom: 0;
+    @include page-headline-padding();
 
     h3 {
       text-transform: uppercase;

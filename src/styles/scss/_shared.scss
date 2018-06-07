@@ -30,6 +30,11 @@
   letter-spacing: 2px;
 }
 
+@mixin page-headline-padding() {
+  padding: 85px 70px;
+  padding-bottom: 0;
+}
+
 @mixin body-break-word() {
 	-ms-word-break: break-all;
 	word-break: break-all;

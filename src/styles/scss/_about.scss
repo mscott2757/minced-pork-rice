@@ -6,8 +6,7 @@
   padding-left: 90px;
 
   &-title {
-    padding: 12vh 5.5vw;
-    padding-bottom: 0;
+    @include page-headline-padding();
 
     h2 {
       @include page-headline();

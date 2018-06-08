@@ -10,8 +10,27 @@ export function getCategory({ categories, projects }, id) {
   }
 }
 
-export function getProject({ projects }, id) {
-  return projects[id];
+export function getProject({ categories, projects }, id, categoryId) {
+  let category = categories[categoryId];
+  let index = category.projects.indexOf(id);
+
+  let prevProject = null;
+  if (index - 1 >= 0) {
+    let id = category.projects[index - 1];
+    prevProject = { id, ...projects[id] };
+  }
+
+  let nextProject = null;
+  if (index + 1 < category.projects.length) {
+    let id = category.projects[index + 1];
+    nextProject = { id, ...projects[id] };
+  }
+
+  return {
+    ...projects[id],
+    prevProject,
+    nextProject
+  }
 }
 
 export function getCategories({ categories }) {

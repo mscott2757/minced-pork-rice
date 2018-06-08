@@ -64,6 +64,35 @@ $item-bottom-margin: 40px;
     }
   }
 
+  .project-footer {
+    display: flex;
+    justify-content: space-between;
+
+    &__link {
+      padding: 25px 40px;
+      cursor: pointer;
+
+      &:hover {
+        p {
+          opacity: 0.7;
+        }
+      }
+
+      p {
+        font-family: lato;
+        font-size: 0.95em;
+        margin-bottom: 5px;
+
+
+        &:last-child {
+          font-weight: bold;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+  }
+
   .project-body {
     padding: 7.5vh 16vw;
 

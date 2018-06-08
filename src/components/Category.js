@@ -5,12 +5,9 @@ class Category extends Component {
   componentDidMount() {
     window.scrollTo(0,0);
   }
-
   getPath = (project) => `/${this.props.id}/${project.id}`;
-
   render() {
-    const { title, projects, testProjects } = this.props;
-    console.log(testProjects);
+    const { title, projects } = this.props;
     return (
       <div className='category'>
         <div className='category__title'>

@@ -1,11 +1,10 @@
 import React from 'react';
 import { Image } from './utils';
+import ProjectLink from './ProjectLink';
 
-const Project = ({ title, bannerImg, body, category }) => {
-  let banner = null;
-  if (bannerImg) {
-    banner = <Image className='project-banner__img-wrapper' src={bannerImg} />;
-  }
+const Project = ({ title, bannerImg, body, category, nextProject, prevProject }) => {
+  let getPath = (project) => project ? `/${category.id}/${project.id}`: null;
+  let banner = bannerImg ? <Image className='project-banner__img-wrapper' src={bannerImg} /> : null;
   return (
     <div className='project'>
       <div className='project-banner'>
@@ -23,6 +22,10 @@ const Project = ({ title, bannerImg, body, category }) => {
       </div>
       <div className='project-body'>
         {body}
+      </div>
+      <div className='project-footer'>
+        <ProjectLink project={prevProject} type='prev' path={getPath(prevProject)} />
+        <ProjectLink project={nextProject} type='next' path={getPath(nextProject)} />
       </div>
     </div>
   );

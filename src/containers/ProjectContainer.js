@@ -7,7 +7,7 @@ const mapStateToProps = (state, { match: { params } }) => {
     category: {
       ...getCategory(state, params.category)
     },
-    ...getProject(state, params.project)
+    ...getProject(state, params.project, params.category)
   }
 }
 

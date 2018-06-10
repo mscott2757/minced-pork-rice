@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-snapshot';
 import './styles/css/index.css';
 import { AppContainer } from './containers';
 import registerServiceWorker from './registerServiceWorker';
@@ -11,7 +11,7 @@ import { ScrollToTop } from './components';
 
 const store = createStore(mincedPorkRice);
 
-ReactDOM.render(
+render(
   <Provider store={store}>
     <BrowserRouter>
       <ScrollToTop>

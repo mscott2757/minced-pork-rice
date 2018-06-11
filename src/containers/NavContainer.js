@@ -1,11 +1,10 @@
 import { connect } from 'react-redux';
-import App from '../App';
+import { Nav } from '../components/';
 import { withRouter } from 'react-router-dom';
 
-const mapStateToProps = ({ resume, nav }) => {
+const mapStateToProps = ({ nav }) => {
   return {
-    resumeVisible: resume.visible,
-    nav
+    ...nav
   }
 }
 
@@ -13,9 +12,9 @@ const mapDispatchToProps = (dispatch) => {
   return {}
 }
 
-const AppContainer = connect(
+const NavContainer = connect(
   mapStateToProps,
   mapDispatchToProps
-)(App);
+)(Nav);
 
-export default withRouter(AppContainer);
+export default withRouter(NavContainer);

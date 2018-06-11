@@ -13,7 +13,8 @@ class Home extends Component {
 
   scrollToProjects = () => {
 		scroller.scrollTo('categories', {
-			duration: 500,
+      containerId: 'home',
+			duration: 350,
 			delay: 50,
 			smooth: true,
 		})
@@ -21,6 +22,7 @@ class Home extends Component {
 
   scrollToSection = (section) => {
 		scroller.scrollTo(section, {
+      containerId: 'home',
 			duration: 0,
 			delay: 0,
 			smooth: false,
@@ -29,9 +31,9 @@ class Home extends Component {
   }
 
   render() {
-    const { about, categories, home, toggleResume } = this.props;
+    const { about, categories, home, toggleResume, resume } = this.props;
     return (
-      <div className='home'>
+      <div className={'home' + (resume.visible ? ' home--no-scroll' : '')}  id='home'>
         <HomeBanner {...home} handleScroll={this.scrollToProjects} />
         <Categories categories={categories} />
         <About {...about} toggleResume={toggleResume} />

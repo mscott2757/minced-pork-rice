@@ -1,7 +1,7 @@
 import React from 'react';
 import { render } from 'react-snapshot';
 import './styles/css/index.css';
-import { AppContainer } from './containers';
+import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import mincedPorkRice from './reducers';
 import { createStore } from 'redux';
@@ -15,7 +15,7 @@ render(
   <Provider store={store}>
     <BrowserRouter>
       <ScrollToTop>
-        <AppContainer />
+        <App />
       </ScrollToTop>
     </BrowserRouter>
   </Provider>,

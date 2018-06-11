@@ -4,11 +4,12 @@ import { getCategories } from '../selectors';
 import { toggleResume } from '../actions';
 
 const mapStateToProps = (state, ownProps) => {
-  const { home, about } = state;
+  const { home, about, resume } = state;
   return {
     home,
     about,
     categories: getCategories(state),
+    resume,
     ...ownProps
   }
 }

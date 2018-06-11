@@ -1,17 +1,18 @@
 import React from 'react';
-import { Nav, ScrollToCategories, ScrollToAbout } from './components';
+import { ScrollToCategories, ScrollToAbout } from './components';
 import {
   CategoryContainer,
+  NavContainer,
   ProjectContainer,
   ResumeOverlayContainer,
   HomeContainer,
 } from './containers/';
 import { Route, Switch } from 'react-router-dom';
 
-const App = ({ resumeVisible, nav }) => {
+const App = (props) => {
   return (
-    <div className={"App " + (resumeVisible ? 'App--no-scroll' : '')}>
-      <Nav {...nav} />
+    <div className="App">
+      <NavContainer />
       <Switch>
         <Route exact path="/" component={HomeContainer} />
         <Route exact path="/projects" component={ScrollToCategories} />

@@ -12,7 +12,7 @@ class Home extends Component {
   }
 
   scrollToProjects = () => {
-		scroller.scrollTo('homeCategories', {
+		scroller.scrollTo('categories', {
 			duration: 500,
 			delay: 50,
 			smooth: true,

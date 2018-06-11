@@ -72,6 +72,10 @@ $item-bottom-margin: 40px;
       padding: 25px 40px;
       cursor: pointer;
 
+      &:last-child {
+        text-align: right;
+      }
+
       &:hover {
         p {
           opacity: 0.7;

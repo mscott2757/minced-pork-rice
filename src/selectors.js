@@ -13,19 +13,16 @@ export function getCategory({ categories, projects }, id) {
 export function getProject({ categories, projects }, id, categoryId) {
   let category = categories[categoryId];
   let index = category.projects.indexOf(id);
-
   let prevProject = null;
   if (index - 1 >= 0) {
     let id = category.projects[index - 1];
     prevProject = { id, ...projects[id] };
   }
-
   let nextProject = null;
   if (index + 1 < category.projects.length) {
     let id = category.projects[index + 1];
     nextProject = { id, ...projects[id] };
   }
-
   return {
     ...projects[id],
     prevProject,
@@ -36,5 +33,11 @@ export function getProject({ categories, projects }, id, categoryId) {
 export function getCategories({ categories }) {
   return Object.keys(categories).map((id) => {
     return { id, ...categories[id] }
+  });
+}
+
+export function getNavCategories({ categories }) {
+  return Object.keys(categories).map((id) => {
+    return { id, title: categories[id].title }
   });
 }

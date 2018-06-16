@@ -1,10 +1,12 @@
 import { connect } from 'react-redux';
 import { Nav } from '../components/';
 import { withRouter } from 'react-router-dom';
+import { getNavCategories } from '../selectors';
 
-const mapStateToProps = ({ nav }) => {
+const mapStateToProps = (state) => {
   return {
-    ...nav
+    ...state.nav,
+    categories: getNavCategories(state)
   }
 }
 

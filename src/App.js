@@ -8,11 +8,21 @@ import {
   HomeContainer,
 } from './containers/';
 import { Route, Switch } from 'react-router-dom';
+import ReactGA from 'react-ga';
+
+ReactGA.initialize('UA-85617061-2');
+
+const LogPageView = () => {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+  return null;
+}
 
 const App = (props) => {
   return (
     <div className="App">
       <NavContainer />
+      <Route component={LogPageView} />
       <Switch>
         <Route exact path="/" component={HomeContainer} />
         <Route exact path="/projects" component={ScrollToCategories} />

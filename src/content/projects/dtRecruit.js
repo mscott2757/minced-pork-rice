@@ -29,13 +29,25 @@ export const dtRecruit = {
 
       <p>The first half of the day was a design thinking training workshop in which we presented user research, practiced ethnographic interviewing, created personas, and built out customer journeys. </p>
 
-      <p>The second half of the day focused on applying this design process to a Pokémon Go (AR mobile gaming app) case study. Each team had a facilitator to guide them through the case, and eventually presented their case to a panel of judges at the end of the day.
+      <p>The second half of the day focused on applying this design process to a Pokémon Go (AR mobile gaming app) case study. Each team had a facilitator to guide them through the case, and eventually presented their case to a panel of judges at the end of the day. The facilitators and judges included a diverse team of consultants across different levels of seniority. 
       </p>
 
       <ProjectImg src='thinking'/>
 
       <p>We ultimately had exposure to 1000+ students across the two campuses’ design-a-thons, with 150+ sign ups and 80 final participants. The top 3 teams at each campus were extended opportunities to interview, resulting in offers for a handful of candidates.</p>
 
+      <h3>Design Challenges & Takeaways</h3>
+
+      <ol>
+        <li>Though it seems obvious enough, we found many differences between the student organizations we partnered with across the two campuses, despite similarities in the focus of each club and the majors of the students. We had to stay nimble to adapt to the needs of a diverse student body. 
+        </li>
+        <li>Creating a space for students to interact with our team of consultants at a variety of seniority and collaborate on multi-disciplinary teams gave us recruitment insights we found to be a more valuable use of our time than at a traditional career fair booth. 
+        </li>
+
+      </ol>
+
+      <p><i><b>Note:</b> The digital deliverables for this project have been excluded due to the nature of the NDA for this engagement.</i></p>
+   
     </div>
   )
 }

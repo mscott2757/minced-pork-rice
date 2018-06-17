@@ -44,6 +44,7 @@ export const goals = {
         </li>
       </ol>
 
+<p><i><b>Note:</b> Hi-fidelity mockups have been excluded due to the nature of the NDA for this project.</i></p>
     </div>
   )
 }

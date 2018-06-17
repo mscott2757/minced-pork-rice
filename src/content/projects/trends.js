@@ -40,6 +40,19 @@ export const trends = {
 
     <p>The team came away with 5 opportunity areas and conducted an initial prioritization exercise within these areas based upon their perceived value and difficulty level in solving for the identified gaps. We are excited to explore new and existing services, products, and spaces across these opportunity areas. </p>
 
+     <h3>Design Challenges & Takeaways</h3>
+
+      <ol>
+        <li>One of the challenges we faced was finding the right combination of people, teams, and executive sponsorship - in other words, those who would benefit most from attending our workshop. </li>
+        <li>At the start of our workshop, we found that our participants had different definitions for digital onboarding and because of this, held different expectations for the objective of the workshop. We had hoped to address this with the brief pre-read package we sent out a week prior. </li>
+        <li>It is fun and engaging to wear different hats! As we further develop our project strategy roadmap, we have shifted away from workshop facilitation and towards pitching and presenting our workshop outcome.
+        </li>
+
+      </ol>
+
+    <p><i><b>Note:</b> The report out has been excluded due to the nature of the NDA for this project.</i></p>
+    
+
     </div>
   )
 }

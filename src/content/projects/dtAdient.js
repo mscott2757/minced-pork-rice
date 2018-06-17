@@ -38,6 +38,15 @@ export const dtAdient = {
 
       <p>This workshop was just the first step in engaging with our client. We went back onsite to present their findings and prototypes to the rest of our client’s teams, and paved the way for our machine learning and AI team to continue the engagement.</p>
 
+      <h3>Design Challenges & Takeaways</h3>
+
+      <ol>
+        <li>The success of a design thinking workshop is marked not simply by the workshop itself, but also by the ability to execute on the co-created roadmap. Without this, the workshop can easily become just a fun, feel-good experience.</li>
+        <li>It is imperative to obtain executive support and buy in from the get-go. This inlcudes setting realistic expectations on what design thinking is - a mindset that requires organizational and cultural change - and what it is not - just another process. 
+        </li>
+      </ol>
+
+      <p><i><b>Note:</b> The digital deliverables for this project have been excluded due to the nature of the NDA for this engagement.</i></p>
     </div>
   )
 }

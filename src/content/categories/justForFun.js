@@ -6,7 +6,7 @@ export const justForFun = {
     'fishbowl',
     'weekend-state',
     'medium',
-    /* add when I add london vlogs 'movie-moment-chasers' */
+    /* add this back when I add london vlogs 'movie-moment-chasers' */
   ]
 }
 

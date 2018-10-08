@@ -2,9 +2,9 @@
 export const home = {
   bannerImg: 'home',
   titles: [
-    { title: "I'm Waverly", type: 'name' },
-    { title: "& I design", type: 'design' },
-    { title: "experiences", type: 'creative' },
+    { title: "I'm Waverly.", type: 'name' },
+    { title: "Strategist by trade,", type: 'design' },
+    { title: "Creative at heart", type: 'creative' },
   ],
 }
 

@@ -14,7 +14,7 @@ const content = {
   },
   nav: {
     icons: [
-      { icon: 'linkedin', path: 'https://www.linkedin.com/in/waverlychao/' },
+      { icon: 'linkedin', path: 'https://www.linkedin.com/in/waverlyc/' },
       { icon: 'instagram', path: 'https://www.instagram.com/weekendstate/' },
     ]
   }

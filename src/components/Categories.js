@@ -7,7 +7,7 @@ const Categories = ({ categories }) => {
     <div className='categories'>
       <Element name='categories'></Element>
       <div className='categories__title'>
-        <h2>{"I'm Waverly & I design"}</h2>
+        <h2>{"Check out my "}</h2>
         <div className='categories__title--blank'></div>
       </div>
       <div className='categories__body panels'>

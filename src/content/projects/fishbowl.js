@@ -5,7 +5,7 @@ export const fishbowl = {
   thumbImg: 'fish-logo',
   description: 'In this short film, we take a closer look at some of the reasons why Asian Americans are represented the way they are, and the narratives we are trying to share.',
   title: 'FISHBOWL: A short film',
-  bannerImg: 'brighton',
+  bannerImg: 'fishbowl',
   body: (
     <div>
       <h3>Background</h3>

@@ -1,11 +1,11 @@
 
 export const creativeWorkshops = {
-  title: 'Design Strategy',
+  title: 'Design Workshop Outputs',
   thumbImg: 'strategy',
   projects: [
-    'dt-recruit',
+    'dtRecruit',
     'trends',
     'goals',
-    'dt-adient'
+    'dtAdient'
   ]
 }

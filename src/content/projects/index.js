@@ -11,19 +11,18 @@ import { dtAdient } from './dtAdient';
 
 export const projects = {
   /** STRATEGY PROJECTS **/
-  'dt-recruit': dtRecruit,
-  'trends': trends,
-  'dt-adient': dtAdient,
-  'goals': goals,
+  dtRecruit,
+  trends,
+  dtAdient,
+  goals,
 
   /* DESIGN PROJECTS */
- 'freelance': freelance,
- 'portfolio': portfolio,
+  freelance,
+  portfolio,
 
   /* FOR FUN PROJECTS */
-  'fishbowl': fishbowl,
-  'weekend-state': weekendState,
-  'medium': medium,
-  'movie-moment-chasers': movieMomentChasers
-}
-
+  fishbowl,
+  weekendState,
+  medium,
+  movieMomentChasers,
+};

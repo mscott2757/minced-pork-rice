@@ -1,12 +1,12 @@
 
 export const justForFun = {
-  title: 'Just For Fun',
+  title: 'Creative Passion Projects',
   thumbImg: 'for-fun',
   projects: [
+    'movieMomentChasers',
     'fishbowl',
-    'weekend-state',
+    'weekendState',
     'medium',
-    /* add this back when I add london vlogs 'movie-moment-chasers' */
   ]
 }
 

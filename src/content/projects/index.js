@@ -3,6 +3,7 @@ import { portfolio } from './portfolio';
 import { fishbowl } from './fishbowl';
 import { medium } from './medium';
 import { weekendState } from './weekendState';
+import { hungryGhostsClub } from './hungryGhostsClub';
 import { movieMomentChasers } from './movieMomentChasers';
 import { dtRecruit} from './dtRecruit';
 import { trends } from './trends';
@@ -21,6 +22,7 @@ export const projects = {
   portfolio,
 
   /* FOR FUN PROJECTS */
+  hungryGhostsClub,
   fishbowl,
   weekendState,
   medium,

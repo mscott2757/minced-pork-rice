@@ -13,6 +13,7 @@ const images = {
   'travel': require('./fun/travel.jpg'),
   'medium':  require('./fun/medium.jpg'),
   'weekend': require('./fun/wkndst.jpg'),
+  'hgc': require('./fun/hgc.jpg'),
   'fishbowl': require('./fun/fishbowl/banner.jpg'),
 
   /* design projects */

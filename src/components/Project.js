@@ -2,7 +2,14 @@ import React from 'react';
 import { Image } from './utils';
 import ProjectLink from './ProjectLink';
 
-const Project = ({ title, bannerImg, body, category, nextProject, prevProject }) => {
+const Project = ({
+  title,
+  bannerImg,
+  body,
+  category,
+  nextProject,
+  prevProject,
+}) => {
   let getPath = (project) => project ? `/${category.id}/${project.id}`: null;
   let banner = bannerImg ? <Image className='project-banner__img-wrapper' src={bannerImg} /> : null;
   return (

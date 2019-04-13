@@ -1,6 +1,6 @@
 @import 'shared';
 
-$item-bottom-margin: 40px;
+$item-bottom-margin: 16px;
 
 .project {
   min-height: 100vh;
@@ -98,20 +98,28 @@ $item-bottom-margin: 40px;
   }
 
   .project-body {
-    padding: 7.5vh 16vw;
+    padding-top: 50px;
+    width: 700px;
+    margin: 0 auto;
 
     h2, h4 {
       font-family: Lato;
     }
 
     p, h4, ul, ol {
-      padding: 0 30px;
       margin: 0;
       margin-bottom: $item-bottom-margin;
     }
 
+    ul, ol, h4 {
+      padding: 0 30px;
+    }
+
     h4 {
-      font-size: 1.1em;
+      font-size: 0.95em;
+      font-weight: normal;
+      font-style: italic;
+      line-height: 1.5;
 
       &:last-child {
         margin-bottom: 0;
@@ -139,7 +147,6 @@ $item-bottom-margin: 40px;
       @include body-text-normal();
       @include body-break-word();
       text-align: left;
-      text-indent: 3vw;
     }
 
     &__quote {
@@ -180,8 +187,6 @@ $item-bottom-margin: 40px;
 
     h3 {
       @include body-text-lg();
-      text-transform: uppercase;
-      margin-bottom: 20px;
       padding-top: 20px;
 
       &:first-child {

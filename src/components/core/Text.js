@@ -6,6 +6,7 @@ export const P = styled.p`
   font-family: Lato;
   font-size: 1em;
   line-height: 1.3;
+  ${({ letterSpacing }) => letterSpacing ? css`letter-spacing: ${letterSpacing}` : ''};
 `;
 
 export const H1 = styled(P)`
@@ -35,6 +36,10 @@ export const SP = styled(P)`
 `;
 
 export const SH1 = styled(H1)`
+  ${serifStyle};
+`;
+
+export const SH2 = styled(H2)`
   ${serifStyle};
 `;
 

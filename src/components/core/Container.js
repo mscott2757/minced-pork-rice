@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const FixedContainer = styled.div`
   width: 100vw;
@@ -6,6 +6,11 @@ export const FixedContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+`;
+
+export const Flex = styled.div`
+  display: flex;
+  ${({ justify }) => justify ? css`justify-content: ${justify}` : ''};
 `;
 
 export const Space = styled.div`

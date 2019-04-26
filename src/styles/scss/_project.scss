@@ -122,9 +122,9 @@ $item-bottom-margin: 40px;
       list-style-position: inside;
 
       li {
-        font-size: 0.95em;
+        font-size: 1em;
         margin-bottom: 15px;
-        line-height: 1.5;
+        line-height: 1.7;
         padding: 0 38px;
       }
     }
@@ -139,7 +139,7 @@ $item-bottom-margin: 40px;
       @include body-text-normal();
       @include body-break-word();
       text-align: left;
-      text-indent: 3vw;
+      text-indent: 1vw;
     }
 
     &__quote {
@@ -195,7 +195,7 @@ $item-bottom-margin: 40px;
       margin-bottom: $item-bottom-margin;
 
       img {
-        width: 50%;
+        width: 80%;
         height: 100%;
       }
     }

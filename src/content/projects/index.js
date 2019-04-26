@@ -1,30 +1,29 @@
-import { freelance } from './freelance';
-import { portfolio } from './portfolio';
+
 import { fishbowl } from './fishbowl';
 import { medium } from './medium';
 import { weekendState } from './weekendState';
 import { hungryGhostsClub } from './hungryGhostsClub';
-import { movieMomentChasers } from './movieMomentChasers';
-import { dtRecruit} from './dtRecruit';
+import { recruit} from './recruit';
 import { trends } from './trends';
-import { goals } from './goals';
-import { dtAdient } from './dtAdient';
+import { goals } from './wip_goals';
+import { engagement } from './engagement';
+import { freelance } from './freelance';
+
 
 export const projects = {
   /** STRATEGY PROJECTS **/
-  dtRecruit,
+  engagement,
+  recruit,
   trends,
-  dtAdient,
-  goals,
 
   /* DESIGN PROJECTS */
   freelance,
-  portfolio,
+
 
   /* FOR FUN PROJECTS */
   hungryGhostsClub,
-  fishbowl,
   weekendState,
   medium,
-  movieMomentChasers,
+  fishbowl,
+
 };

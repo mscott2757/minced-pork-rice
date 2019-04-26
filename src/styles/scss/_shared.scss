@@ -1,7 +1,7 @@
 @mixin body-text-normal() {
   font-family: Lato;
-  font-size: 0.95em;
-  line-height: 1.5;
+  font-size: 1.1em;
+  line-height: 1.7;
 
   i {
     font-style: italic;
@@ -20,7 +20,7 @@
   font-family: Lato;
   line-height: 1.5;
   font-weight: normal;
-  font-style: italic;
+  font-style: bold;
   font-size: 1.5em;
 }
 
@@ -76,7 +76,6 @@
         letter-spacing: 1px;
         font-size: 3.6vh;
         font-family: Lato;
-        font-style: italic;
         font-weight: normal;
       }
     }

@@ -38,8 +38,8 @@
   .home-banner {
     height: 100%;
     width: 100%;
-    padding: 0 90px;
-    padding-top: 5vh;
+    padding: 0 70px;
+    padding-top: 32vh;
     position: relative;
     z-index: 3;
 
@@ -54,38 +54,52 @@
     }
 
     .home-banner__title {
-      margin-bottom: 4.2vh;
+      margin-bottom: 4vh;
 
       h1 {
-        color: white;
+        color: black;
+        display: inline-block;
+        font-style: none;
+        font-weight: none;
+        font-size: 2.5em;
+        line-height: 1.2em;
+ /*       background-color: #adb6aa; */
+      }
+
+      &--name {
+        padding-left: 10vw;
+        color: black;
         display: inline-block;
         font-style: italic;
         font-weight: bold;
-        font-size: 5em;
+        font-size: 2em;
         letter-spacing: 4px;
-        background-color: #adb6aa;
-        padding: 0 15px;
-      }
-t
-      &--name {
-        padding-left: 14vw;
+ /*       background-color: #adb6aa; */
       }
 
-      &--design {
-        padding-left: 10vw;
+      &--motto {
+      padding-left: 10vw; 
 
       }
 
-      &--creative, &--workshops {
+      &--bio, &--workshops {
+      padding-left: 10vw;
 
       }
 
-      &--creative {
-        padding-left: 16vw;
+      &--bio {
+        font-family: Lato;
+        color: black;
+        display: inline-block;
+        font-style: none;
+        font-weight: none;
+        font-size: 0.5em;
+ /*       background-color: #adb6aa; */
       }
 
       &--workshops {
-        padding-left: 29vw;
+       
+       /* padding-left: 29vw; */
       }
     }
   }

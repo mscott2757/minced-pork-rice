@@ -1,6 +1,6 @@
 @import 'shared';
 
-$item-bottom-margin: 40px;
+$item-bottom-margin: 16px;
 
 .project {
   min-height: 100vh;
@@ -8,46 +8,16 @@ $item-bottom-margin: 40px;
   padding-left: 90px;
 
   .project-banner {
-    width: 100%;
-    height: 40vh;
-    min-height: 280px;
-    background-color: #ddd;
-    position: relative;
-    overflow: hidden;
-
-    .project-banner__img-wrapper {
-      height: 100%;
-
-      img {
-        min-height: 40vh;
-
-        @media only screen and (min-width: 950px) {
-          width: 100%;
-        }
-
-        @media only screen and (max-width: 950px) {
-          height: 100%;
-        }
-      }
-    }
+    width: 700px;
+    margin: 0 auto;
 
     .project-banner__title {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: 4;
-      padding: 2.2vh 2.7vw;
 
       h2, h3 {
-        color: #333;
-        background-color: #fff;
-        display: inline-block;
         letter-spacing: 1px;
-        padding: 0 4px;
       }
 
       .project-banner__category {
-        margin-bottom: 8px;
         h3 {
           text-transform: uppercase;
           font-family: Lato;
@@ -56,9 +26,8 @@ $item-bottom-margin: 40px;
 
       .project-banner__name {
         h2 {
-          margin-right: 10px;
-          font-size: 2.5em;
-          text-transform: lowercase;
+          font-size: 72px;;
+          font-family: 'Playfair display';
         }
       }
     }
@@ -98,20 +67,28 @@ $item-bottom-margin: 40px;
   }
 
   .project-body {
-    padding: 7.5vh 16vw;
+    padding-top: 50px;
+    width: 700px;
+    margin: 0 auto;
 
     h2, h4 {
       font-family: Lato;
     }
 
     p, h4, ul, ol {
-      padding: 0 30px;
       margin: 0;
       margin-bottom: $item-bottom-margin;
     }
 
+    ul, ol, h4 {
+      padding: 0 30px;
+    }
+
     h4 {
-      font-size: 1.1em;
+      font-size: 0.95em;
+      font-weight: normal;
+      font-style: italic;
+      line-height: 1.5;
 
       &:last-child {
         margin-bottom: 0;
@@ -139,7 +116,10 @@ $item-bottom-margin: 40px;
       @include body-text-normal();
       @include body-break-word();
       text-align: left;
+<<<<<<< HEAD:src/styles/scss/_project.scss
       text-indent: 1vw;
+=======
+>>>>>>> 1d4ede5f3bb98f0dd233c1d4e7e58e14e38d2fc5:src/styles/_project.scss
     }
 
     &__quote {
@@ -180,8 +160,6 @@ $item-bottom-margin: 40px;
 
     h3 {
       @include body-text-lg();
-      text-transform: uppercase;
-      margin-bottom: 20px;
       padding-top: 20px;
 
       &:first-child {

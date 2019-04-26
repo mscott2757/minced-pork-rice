@@ -19,9 +19,14 @@
 @mixin body-text-lg() {
   font-family: Lato;
   line-height: 1.5;
+<<<<<<< HEAD:src/styles/scss/_shared.scss
   font-weight: normal;
   font-style: bold;
   font-size: 1.5em;
+=======
+  font-weight: bold;
+  font-size: 1.25em;
+>>>>>>> 1d4ede5f3bb98f0dd233c1d4e7e58e14e38d2fc5:src/styles/_shared.scss
 }
 
 @mixin page-headline() {

@@ -1,6 +1,9 @@
 {
   "name": "minced-pork-rice",
   "version": "0.1.0",
+  "engines": {
+  "node": "8.11.1"
+  },
   "private": true,
   "dependencies": {
     "ajv": "^6.3.0",
@@ -43,11 +46,4 @@
     "not op_mini all"
   ]
 }
-{
-  "name": "myapp",
-  "description": "a really cool app",
-  "version": "1.0.0",
-  "engines": {
-    "node": "8.11.1"
-  }
-}
+

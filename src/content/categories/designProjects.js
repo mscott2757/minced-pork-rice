@@ -1,9 +1,8 @@
 
 export const designProjects = {
-  title: 'Visual Design Portfolio',
+  title: 'Visual Design',
   thumbImg: 'design',
   projects: [
-    'freelance',
-    'portfolio'
+  'freelance'
   ]
 }

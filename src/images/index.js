@@ -32,6 +32,12 @@ const images = {
   /* about */
   'me': require('./square2.jpg'),
 
+  /* BIEL engagement */
+  'p1_boxes': require('./boxes.jpg'),
+  'p1_blueprint': require('./blueprint.jpg'),
+  'p1_funnel': require('./funnel.jpg'),
+  'test-banner-2': require('./test-banner-2.jpg'),
+
   /* #goals */
   'youngppl': require('./design/goals/0.jpg'),
   'personas': require('./design/goals/1.jpg'),
@@ -58,6 +64,8 @@ const images = {
   'f12': require('./design/freelance/12.jpg'),
   'f13': require('./design/freelance/13.jpg'),  
   'f14': require('./design/freelance/14.jpg'), 
+  'f15': require('./design/freelance/15.jpg'),
+  'f16': require('./design/freelance/16.jpg'),
 
   /* portfolio */
   'web': require('./design/portfolio/1.jpg'),
@@ -82,7 +90,8 @@ const images = {
   'molly': require('./strategy/trends/1.jpeg'), 
   'blue': require('./strategy/trends/2.jpeg'),   
   'foamboard': require('./strategy/trends/3.jpeg'),  
-  'wall': require('./strategy/trends/4.jpg'),    
+  'wall': require('./strategy/trends/4.jpg'),  
+  'LFIL': require('./strategy/trends/5.jpeg'),  
 
   'strategy': require('./squares/international.jpg'),
   'design': require('./design/freelance.jpg'),

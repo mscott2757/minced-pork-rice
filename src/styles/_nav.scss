@@ -31,7 +31,7 @@
         }
 
         a {
-          font-style: italic;
+          font-style: bold;
         }
 
         .nav__dropdown {
@@ -62,7 +62,7 @@
             }
 
             a {
-              font-style: italic;
+              font-style: none;
               font-size: 0.95em;
             }
           }
@@ -71,12 +71,14 @@
         .nav__logo {
           font-family: 'Playfair Display';
           font-size: 28px;
+          font-style: italic;
           letter-spacing: 1px;
         }
 
         .nav__link {
           font-family: Lato;
-          text-transform: uppercase;
+          font-style: none;
+          text-transform: Capitalize;
           font-size: 18px;
           padding-top: 6px;
 

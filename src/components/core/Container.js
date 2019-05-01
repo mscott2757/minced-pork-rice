@@ -11,6 +11,8 @@ export const FixedContainer = styled.div`
 export const Flex = styled.div`
   display: flex;
   ${({ justify }) => justify ? css`justify-content: ${justify}` : ''};
+  ${({ column }) => column ? css`flex-direction: column` : ''};
+  ${({ align }) => align ? css`align-items: ${align}` : ''};
 `;
 
 export const Space = styled.div`

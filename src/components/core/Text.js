@@ -6,7 +6,11 @@ export const P = styled.p`
   font-family: Lato;
   font-size: 1em;
   line-height: 1.3;
-  ${({ letterSpacing }) => letterSpacing ? css`letter-spacing: ${letterSpacing}` : ''};
+  && {
+    ${({ letterSpacing }) => letterSpacing ? css`letter-spacing: ${letterSpacing}` : ''};
+    ${({ fontWeight }) => fontWeight ? css`font-weight: ${fontWeight}` : ''};
+    ${({ fontStyle }) => fontStyle ? css`font-style: ${fontStyle}` : ''};
+  }
 `;
 
 export const H1 = styled(P)`

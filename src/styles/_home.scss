@@ -25,67 +25,12 @@
     left: 0;
 
     img {
-      @media only screen and (min-width: 1060px) {
+      @media only screen and (min-width: 1200px) {
         width: 100%;
       }
 
-      @media only screen and (max-width: 1060px) {
+      @media only screen and (max-width: 1200px) {
         height: 100%;
-      }
-    }
-  }
-
-  .home-banner {
-    height: 100%;
-    width: 100%;
-    padding: 0 90px;
-    padding-top: 5vh;
-    position: relative;
-    z-index: 3;
-
-    .home-banner__caret {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-
-      i {
-        color: white;
-      }
-    }
-
-    .home-banner__title {
-      margin-bottom: 4.2vh;
-
-      h1 {
-        color: white;
-        display: inline-block;
-        font-style: italic;
-        font-weight: bold;
-        font-size: 5em;
-        letter-spacing: 4px;
-        background-color: #adb6aa;
-        padding: 0 15px;
-      }
-t
-      &--name {
-        padding-left: 14vw;
-      }
-
-      &--design {
-        padding-left: 10vw;
-
-      }
-
-      &--creative, &--workshops {
-
-      }
-
-      &--creative {
-        padding-left: 16vw;
-      }
-
-      &--workshops {
-        padding-left: 29vw;
       }
     }
   }

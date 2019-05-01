@@ -7,8 +7,7 @@ const Categories = ({ categories }) => {
     <div className='categories'>
       <Element name='categories'></Element>
       <div className='categories__title'>
-        <h2>{"Check out my "}</h2>
-        <div className='categories__title--blank'></div>
+        <h2>Projects</h2>
       </div>
       <div className='categories__body panels'>
         {categories.map((category, index) => {

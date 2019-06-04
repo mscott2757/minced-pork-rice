@@ -2,6 +2,7 @@ import React from 'react';
 import { ProjectImg, Quote, Video } from '../utils';
 
 export const trends = {
+  id: 'trends',
   thumbImg: 'postit',
   description: 'How do we rebuild our brand to inspire our customers to fall in love with us again? We hosted a workshop to find out how. ',
   title: "Let's Fall in Love!",

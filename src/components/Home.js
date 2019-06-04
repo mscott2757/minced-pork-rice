@@ -3,6 +3,7 @@ import { scroller } from 'react-scroll';
 import HomeBanner from './HomeBanner';
 import Categories from './Categories';
 import About from './About';
+import { TopProject } from './TopProject';
 
 class Home extends Component {
   componentDidMount() {
@@ -31,11 +32,22 @@ class Home extends Component {
   }
 
   render() {
-    const { about, categories, home, toggleResume, resume } = this.props;
+    const {
+      about,
+      categories,
+      home: { title, bannerImg },
+      topProjects,
+      toggleResume,
+      resume,
+    } = this.props;
     return (
       <div className={'home' + (resume.visible ? ' home--no-scroll' : '')}  id='home'>
-        <HomeBanner {...home} handleScroll={this.scrollToProjects} />
-        <Categories categories={categories} />
+        <HomeBanner
+          title={title}
+          bannerImg={bannerImg}
+          handleScroll={this.scrollToProjects}
+        />
+        {topProjects.map(project => <TopProject key={project.id} {...project} />)}
         <About {...about} toggleResume={toggleResume} />
       </div>
     );

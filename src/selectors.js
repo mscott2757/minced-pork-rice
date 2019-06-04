@@ -1,34 +1,36 @@
 
-export function getCategory({ categories, projects }, id) {
-  let category = categories[id];
+export function getCategory({ categories, projects }, projectId) {
+  const category = categories.find(({ projects }) => projects.includes(projectId));
   return {
-    id,
     ...category,
     projects: category.projects.map((project) => {
-      return { id: project, ...projects[project] }
+      return projects.find(({ id }) => id === project);
     })
   }
 }
 
 export function getProject({ categories, projects }, id, categoryId) {
-  let category = categories[categoryId];
+  const category = categories.find(cat => cat.id === categoryId);
   let index = category.projects.indexOf(id);
   let prevProject = null;
   if (index - 1 >= 0) {
     let id = category.projects[index - 1];
-    prevProject = { id, ...projects[id] };
+    prevProject = projects.find(project => project.id === id);
   }
   let nextProject = null;
   if (index + 1 < category.projects.length) {
     let id = category.projects[index + 1];
-    nextProject = { id, ...projects[id] };
+    nextProject = projects.find(project => project.id === id);
   }
   return {
-    ...projects[id],
+    ...projects.find(({ id: projectId }) => projectId === id),
     prevProject,
     nextProject
   }
 }
+
+export const getTopProjects = ({ home: { topProjects }, projects }) =>
+  topProjects.map(id => projects.find(({ id: projectId }) => projectId === id));
 
 export function getCategories({ categories }) {
   return Object.keys(categories).map((id) => {

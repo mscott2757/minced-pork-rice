@@ -6,5 +6,17 @@ export const home = {
     { title: "Strategist by trade, creator at heart", type: 'motto' },
     { title: "Currently a Product Innovation Strategist", type: 'bio' },
   ],
+  topProjects: [
+    'engagement',
+    // 'recruit',
+    // 'trends',
+  ],
+  projects: [
+    'weekendState',
+    'medium',
+    'hungryGhostsClub',
+    'fishbowl',
+    'freelance',
+  ],
 }
 

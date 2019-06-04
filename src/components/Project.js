@@ -16,16 +16,13 @@ const Project = ({
   nextProject,
   prevProject,
 }) => {
-  const getPath = project => project ? `/${category.id}/${project.id}`: null;
+  const getPath = project => project ? `/${project.id}` : null;
   return (
     <div className='project'>
       <div className='project-banner'>
         <div className='project-banner__title'>
           <Space height="50px" />
           <TitleText letterSpacing="1px">{title}</TitleText>
-          <a href={`/${category.id}`}>
-            <H3 letterSpacing="1px">{category.title}</H3>
-          </a>
         </div>
       </div>
       <div className='project-body'>

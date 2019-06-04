@@ -3,6 +3,7 @@ import { ProjectImg } from '../utils';
 
 export const freelance = {
   thumbImg: 'freelance',
+  id: 'freelance',
   description: 'Visual design portfolio of digital assets used for publicity and social media',
   title: 'Freelance',
   bannerImg: 'jpdispo',  

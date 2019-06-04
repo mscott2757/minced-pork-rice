@@ -1,6 +1,7 @@
 const images = {
   /* home page images */
   'home': require('./home.jpg'),
+  'top-engagement': require('./top-engagement.png'),
 
   /* test images */
   'test-square': require('./test-square.jpg'),

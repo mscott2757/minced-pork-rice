@@ -2,10 +2,13 @@ import React from 'react';
 import { ProjectImg, Quote, Video } from '../utils';
 
 export const engagement = {
+  id: 'engagement',
   thumbImg: 'digital',
   description: 'Creating an equitable and intuitive engagement model for product innovation',
-  title: 'A New Engagement Model',
-  bannerImg: 'test-banner-2',  
+  title: 'New Engagement Model',
+  bannerImg: 'test-banner-2',
+  topImg: 'top-engagement',
+  tag: 'Service Design | 2019',
   body: (
 
   <div>

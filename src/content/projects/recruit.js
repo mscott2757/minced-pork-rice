@@ -3,9 +3,10 @@ import { ProjectImg, Quote, Video } from '../utils';
 
 export const recruit = {
   thumbImg: 'sharpie',
+  id: 'recruit',
   description: "Because career fairs and LinkedIn shouldn't be the only ways to hire new talent",
   title: 'Redesigning Recruitment',
-  bannerImg: 'mustard',    
+  bannerImg: 'mustard',
   body: (
   <div>
   <h3>The Project</h3>

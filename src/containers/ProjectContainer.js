@@ -3,11 +3,10 @@ import Project from '../components/Project';
 import { getCategory, getProject } from '../selectors';
 
 const mapStateToProps = (state, { match: { params } }) => {
+  const category = getCategory(state, params.project);
   return {
-    category: {
-      ...getCategory(state, params.category)
-    },
-    ...getProject(state, params.project, params.category)
+    category,
+    ...getProject(state, params.project, category.id)
   }
 }
 

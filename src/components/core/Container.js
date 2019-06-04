@@ -1,5 +1,11 @@
 import styled, { css } from 'styled-components';
 
+export const FullContainer = styled.div`
+  width: 100vw;
+  height: 100vh;
+  padding-left: 90px;
+`;
+
 export const FixedContainer = styled.div`
   width: 100vw;
   height: 100vh;
@@ -13,6 +19,8 @@ export const Flex = styled.div`
   ${({ justify }) => justify ? css`justify-content: ${justify}` : ''};
   ${({ column }) => column ? css`flex-direction: column` : ''};
   ${({ align }) => align ? css`align-items: ${align}` : ''};
+  ${({ height }) => height ? css`height: ${height}` : ''};
+  ${({ width }) => width ? css`width: ${width}` : ''};
 `;
 
 export const Space = styled.div`

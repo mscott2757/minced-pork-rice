@@ -29,3 +29,15 @@ export const Image = ({ src: image, className }) => {
     </div>
   );
 }
+
+export const withImageProp = imageProp => Comp => props => {
+  const image = props[imageProp];
+  if (!(image in images)) {
+    throw new Error(`Image '${image}' not found in images/index.js`);
+  }
+  const newProps = {
+    ...props,
+    [imageProp]: images[image],
+  };
+  return <Comp {...newProps} />;
+}

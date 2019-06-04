@@ -10,7 +10,7 @@ import { engagement } from './engagement';
 import { freelance } from './freelance';
 
 
-export const projects = {
+export const projects = [
   /** STRATEGY PROJECTS **/
   engagement,
   recruit,
@@ -25,5 +25,4 @@ export const projects = {
   weekendState,
   medium,
   fishbowl,
-
-};
+];

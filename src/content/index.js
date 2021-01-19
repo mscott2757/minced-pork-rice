@@ -15,7 +15,7 @@ const content = {
   nav: {
     icons: [
       { icon: 'linkedin', path: 'https://www.linkedin.com/in/waverlyc/' },
-      { icon: 'instagram', path: 'https://www.instagram.com/weekendstate/' },
+      { icon: 'instagram', path: 'https://www.instagram.com/yourbasicgoose/' },
     ]
   }
 }

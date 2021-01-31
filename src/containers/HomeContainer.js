@@ -1,16 +1,11 @@
 import { connect } from 'react-redux';
 import Home from '../components/Home';
-import { getCategories, getTopProjects } from '../selectors';
+import { getCategories } from '../selectors';
 import { toggleResume } from '../actions';
 
 const mapStateToProps = (state, ownProps) => {
-  const {
-    home,
-    about,
-    resume
-  } = state;
+  const { home, about, resume } = state;
   return {
-    topProjects: getTopProjects(state),
     home,
     about,
     categories: getCategories(state),

@@ -43,11 +43,11 @@ const HomeBanner = ({ handleScroll, titles, bannerImg }) => {
         <Title>Hi, I’m Waverly!</Title>
         <SubTitle fontWeight="normal" fontStyle="normal">Strategist by trade, creator at heart</SubTitle>
         <Space height="34px" />
-        <SubText>Currently a <Bold>Product Innovation Strategist</Bold> and <Bold>Freelance Designer</Bold>,</SubText>
-        <SubText>Previously Strategic Design Business Analyst at Infosys Consulting</SubText>
+        <SubText>Currently a <Bold>Program Manager at Uber</Bold>,</SubText>
+        <SubText>Previously a Product Innovation Strategist and Design Strategist</SubText>
       </BannerWrapper>
     </div>
   )
-}
+};
 
 export default HomeBanner;

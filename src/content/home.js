@@ -3,7 +3,7 @@ export const home = {
   bannerImg: 'home',
   titles: [
     { title: "Hi, I'm Waverly!", type: 'name' },
-    { title: "Strategist by trade, creator at heart", type: 'motto' },
+    { title: "Human-centered designer, creative builder, and lateral thinker", type: 'motto' },
     { title: "Currently a Product Innovation Strategist", type: 'bio' },
   ],
 }

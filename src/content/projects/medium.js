@@ -1,7 +1,7 @@
 
 export const medium = {
   thumbImg: 'medium',
-  title: 'Medium',
-  description: 'I write about film, Asian American creatives, and DIY decor ',
+  title: 'Blog',
+  description: 'I write about DIYs, decor, and creative projects for your home',
   externalLink: 'https://medium.com/@waverlyc'
 }

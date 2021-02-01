@@ -3,7 +3,6 @@ import { ProjectImg, Quote, Video } from '../utils';
 
 export const fishbowl = {
   thumbImg: 'fish-logo',
-  id: 'fishbowl',
   description: 'A short film on Asian American representation for a class project (2016)',
   title: 'FISHBOWL: A short film',
   bannerImg: 'fishbowl',

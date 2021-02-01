@@ -32,7 +32,8 @@ const App = (props) => {
           <Route exact path="/" component={HomeContainer} />
           <Route exact path="/projects" component={ScrollToCategories} />
           <Route exact path="/about" component={ScrollToAbout} />
-          <Route exact path="/:project?" component={ProjectContainer} />
+          <Route exact path="/:category?" component={CategoryContainer} />
+          <Route exact path="/:category?/:project?" component={ProjectContainer} />
         </Switch>
         <ResumeOverlayContainer />
       </MediaQuery>

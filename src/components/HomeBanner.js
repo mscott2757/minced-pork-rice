@@ -30,17 +30,24 @@ const SubTitle = styled(SH1)`
   font-size: 46px;
 `;
 
-const HomeBanner = ({ titles, bannerImg }) => (
-  <div className='home-banner-wrapper'>
-    <Image className='home-banner-img' src={bannerImg} />
-    <BannerWrapper column justify="center">
-      <Title>Hi, I’m Waverly!</Title>
-      <SubTitle fontWeight="normal" fontStyle="normal">Strategist by trade, creator at heart</SubTitle>
-      <Space height="34px" />
-      <SubText>Currently a <Bold>Product Innovation Strategist</Bold> and <Bold>Freelance Designer</Bold>,</SubText>
-      <SubText>Previously Strategic Design Business Analyst at Infosys Consulting</SubText>
-    </BannerWrapper>
-  </div>
-);
+const HomeBanner = ({ handleScroll, titles, bannerImg }) => {
+  let homeBanner = null;
+  if (bannerImg) {
+    homeBanner = <Image className='home-banner-img' src={bannerImg} />;
+  }
+
+  return (
+    <div className='home-banner-wrapper'>
+      {homeBanner}
+      <BannerWrapper column justify="center">
+        <Title>Hi, I’m Waverly!</Title>
+        <SubTitle fontWeight="normal" fontStyle="normal">Strategist by trade, creator at heart</SubTitle>
+        <Space height="34px" />
+        <SubText>Currently a <Bold>Product Innovation Strategist</Bold> and <Bold>Freelance Designer</Bold>,</SubText>
+        <SubText>Previously Strategic Design Business Analyst at Infosys Consulting</SubText>
+      </BannerWrapper>
+    </div>
+  )
+}
 
 export default HomeBanner;
